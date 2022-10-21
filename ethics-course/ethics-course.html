@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethics</title>
+    <link rel="stylesheet" href="ethics-course.css">
+    <link rel="icon" href="../icons/logo2.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="web-logo">
+                <img src="../icons/our-logo.png" alt="">
+            </div>
+            <div class="navigation">
+                <ul id="myUl">
+                    <div class="sign-in-con" id="none">
+                        <button id="sign-in-btn" class="mobile-sign-in-btn">sign in</button>
+                    </div>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="drop-btn"><a href="#myCourses" class="courses-drop">Courses</a>
+                        <div class="drop-links">
+                            <a href="../html-course/html-course.html"><img src="../icons/html2.png" alt="">HTML</a>
+                            <a href="../cpp-course/cpp-course.html"><img src="../icons/cpp2.png" alt="">C++</a>
+                            <a href="ethics-course.html"><img src="../icons/ethics2.png" alt="">Ethics</a>
+                            <a href="../history-course/history-course.html"><img src="../icons/history2.png" alt="">History</a>
+                            <a href="../education-course/educ-course.html"><img src="../icons/educ2.png" alt="">Education</a>
+                            <a href="../physical-education-course/pe-course.html"><img src="../icons/pe2.png" alt="">Physical Education</a>
+                        </div>
+                    </li>
+                    <li><a href="#container">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="sign-in-con">
+                    <button id="sign-in-btn" class="web-sign-in-btn">sign in</button>
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div id="blur"></div>
+            <div class="sign-up-bg">
+                <img src="../icons/signup.png" alt="">
+            </div>
+            <div class="sign-in-bg">
+                <img src="../icons/signin.png" alt="">
+            </div>
+            <!-- Sign In Section -->
+
+            <div class="sign-in-container">
+                <div class="sign-in-con">
+                    <div class="hamburger2">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="sign-in-title-img">
+                        <img src="../icons/sign-in.png" alt="">
+                        <div class="sign-in-title">
+                            <h1>Sign In</h1>
+                        </div>
+                    </div>
+                    <div class="sign-in-content">
+                        <div class="successful">
+                            <span id="hello">Sign up successful. Please sign in now.</span>
+                        </div>
+                        <div class="successful2">
+                            <span id="hello">Incorrect email or password.</span>
+                        </div>
+                        <div class="successful4">
+                            <span id="hello">Please input correctly in all the space provided below.</span>
+                        </div>
+                        <div class="input-con">
+                            <input type="text" id="sign-in-input-email" autocomplete="off" required>
+                            <label for="email" class="label-name"><span class="content-name">Email</span></label>
+                        </div>
+                        
+                        <div class="input-con">
+                            <input type="password" required id="sign-in-input-password">
+                            <label for="password" class="label-name"><span class="content-name">Password</span></label>
+                        </div>
+                    </div>
+
+                    <div class="f-pass">
+                        <span><input type="checkbox">Keep me sign in</span>
+                        <p id="now">Forgot Password</p>
+                    </div>
+
+                    <div class="button">
+                        <button id="new-sign-in-btn">Sign In</button>
+                    </div>
+
+                    <div class="sign-up">
+                        <p>Not a member?</p>
+                        <span id="sign-up-now">Sign Up</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sign Up Section -->
+
+            <div class="sign-up-container">
+                <div class="sign-up-con">
+                        <div class="hamburger3">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="sign-up-title-img">
+                            <img src="../icons/sign-in.png" alt="">
+                            <div class="sign-up-title">
+                                <h1>Sign Up</h1>
+                            </div>
+                        </div>
+                        <div class="sign-up-content">
+                            <div class="error">
+                                <span id="yeah">Please input correctly in all the space provided below.</span>
+                            </div>
+                            <div class="error5">
+                                <span id="y">Email must contain '@gmail.com'.</span>
+                            </div>
+                            <div class="error2">
+                                <span id="y">Password must contain of 8 characters and above.</span>
+                            </div>
+                            <div class="error6">
+                                <span id="y">Please check the box below to continue signup.</span>
+                            </div>
+
+                            <div class="input-con">
+                                <input type="text" required id="sign-up-user-name">
+                                <label for="username" class="label-name"><span class="content-name">Username</span></label>
+                            </div>
+
+                            <div class="input-con">
+                                <input type="text" required id="sign-up-email">
+                                <label for="email" class="label-name"><span class="content-name">Email</span></label>
+                            </div>
+                            <div class="input-con">
+                                <input type="password" required id="sign-up-password">
+                                <label for="password" class="label-name"><span class="content-name">Password</span></label>
+                            </div>
+                        </div>
+                        <div class="r-updates">
+                            <input type="checkbox" id="myCheckbox">
+                            <p>I'd like to recieve updates on my email.</p>
+                        </div>
+
+                        <div class="button2">
+                        <button id="new-sign-up-btn" type="submit">Sign Up</button>
+                        </div>
+
+                        <div class="terms-con-and-pr-po">
+                            <p>By signing up you acknowledge and accept out <span>Terms & Conditions</span> and <span>Privacy Policy</span></p>
+                        </div>
+
+                        <div class="already-member">
+                            <p>Already a member? <span id="close-sign-up">Sign In</span></p>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Forgot password Section -->
+
+            <div class="fpass-container">
+                <div class="fpass-con">
+                    <div class="hamburger4">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="fpass-title-img">
+                        <div class="fpass-title">
+                            <h1>Reset Password</h1>
+                        </div>
+                    </div>
+                    <div class="fpass-content">
+                        <div class="successful20">
+                            <span id="hello">Incorrect password.</span>
+                        </div>
+                        <div class="successful30">
+                            <span id="hello">Password must contain 8 characters and above.</span>
+                        </div>
+                        <div class="successful40">
+                            <span id="hello">Reset password successful.</span>
+                        </div>
+                        <div class="input-con">
+                            <input type="password" required id="fpass-input-password">
+                            <label for="password" class="label-name"><span class="content-name">New Password</span></label>
+                        </div>
+                        <div class="input-con">
+                            <input type="password" required id="fpass-new-password">
+                            <label for="password" class="label-name"><span class="content-name">Confirm Password</span></label>
+                        </div>
+                        <div class="button2">
+                            <button id="new-confirm-btn" type="submit">Confirm</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="main-course-container">
+                    <div class="main-course-con">
+                        <div class="course-title-con">
+                            <img src="../icons/ethics2.png" alt="">
+                            <div class="course-title">
+                                <h1>Basics of Ethics</h1>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                                <div class="p1-1">
+                                    <b style="font-size: 20px;">What is ethics? </b>
+                                    <br>
+                                    <p>At its simplest, ethics is a system of moral principles. They affect how people make decisions and lead their lives.</p>
+                                    <p>Ethics is concerned with what is good for individuals and society and is also described as moral philosophy.</p>
+                                    <p>The term is derived from the Greek word ethos which can mean custom, habit, character or disposition.</p>
+                                </div>
+                                <div class="p1-2">
+                                    <h3>Ethics covers the following dilemmas:</h3>
+                                    <p>how to live a good life</p>
+                                    <p>our rights and responsibilities</p>
+                                    <p>the language of right and wrong</p>
+                                    <p>moral decisions - what is good and bad?</p>
+                                    <p>Our concepts of ethics have been derived from religions, philosophies and cultures. They infuse debates on topics like abortion, human rights and professional conduct.</p>
+                                </div>
+                                <div class="p1-3">
+                                    <h2>Approaches to ethics</h2>
+                                    <p>Philosophers nowadays tend to divide ethical theories into three areas: metaethics, normative ethics and applied ethics.</p><br>
+                                    <p>Meta-ethics deals with the nature of moral judgement. It looks at the origins and meaning of ethical principles.</p><br>
+                                    <p>Normative ethics is concerned with the content of moral judgements and the criteria for what is right or wrong.</p><br>
+                                    <p>Applied ethics looks at controversial topics like war, animal rights and capital punishment</p>
+                                </div>
+                                
+                                <div class="p2-1">
+                                    <h2>What use is ethics?</h2>
+                                    <p>American motorway sign reading 'Answers: next exit' Ethics needs to provide answers. Photo: Geoffrey Holman ©</p><br>
+                                    <p>If ethical theories are to be useful in practice, they need to affect the way human beings behave.</p><br>
+                                    <p>Some philosophers think that ethics does do this. They argue that if a person realises that it would be morally good to do something then it would be irrational for that person not to do it.</p><br>
+                                    <p>But human beings often behave irrationally - they follow their 'gut instinct' even when their head suggests a different course of action.</p><br>
+                                    <p>However, ethics does provide good tools for thinking about moral issues.</p>
+                                </div>
+                                <div class="p2-2">
+                                    <h3>Ethics can provide a moral map</h3>
+                                    <p>Most moral issues get us pretty worked up - think of abortion and euthanasia for starters. Because these are such emotional issues we often let our hearts do the arguing while our brains just go with the flow.</p><br>
+                                    <p>But there's another way of tackling these issues, and that's where philosophers can come in - they offer us ethical rules and principles that enable us to take a cooler view of moral problems.</p>
+                                    <p>So ethics provides us with a moral map, a framework that we can use to find our way through difficult issues.</p><br><br>
+                                    <h3>Ethics can pinpoint a disagreement</h3>
+                                    <p>Using the framework of ethics, two people who are arguing a moral issue can often find that what they disagree about is just one particular part of the issue, and that they broadly agree on everything else.</p><br>
+                                    <p>That can take a lot of heat out of the argument, and sometimes even hint at a way for them to resolve their problem.</p><br>
+                                    <p>But sometimes ethics doesn't provide people with the sort of help that they really want.</p><br>
+                                    <p>Ethics doesn't give right answers</p><br>
+                                    <p>Ethics doesn't always show the right answer to moral problems.</p><br>
+                                    <p>Indeed more and more people think that for many ethical issues there isn't a single right answer - just a set of principles that can be applied to particular cases to give those involved some clear choices.</p><br>
+                                    <p>Some philosophers go further and say that all ethics can do is eliminate confusion and clarify the issues. After that it's up to each individual to come to their own conclusions.</p><br><br>
+                                    <h3>Ethics can give several answers</h3>
+                                    <p>Many people want there to be a single right answer to ethical questions. They find moral ambiguity hard to live with because they genuinely want to do the 'right' thing, and even if they can't work out what that right thing is, they like the idea that 'somewhere' there is one right answer.</p><br>
+                                    <p>But often there isn't one right answer - there may be several right answers, or just some least worst answers - and the individual must choose between them.</p><br>
+                                    <p>For others moral ambiguity is difficult because it forces them to take responsibility for their own choices and actions, rather than falling back on convenient rules and customs.</p><br>
+                                </div>
+                                <div class="p2-3">
+                                    <h2>Ethics and people</h2>
+                                    <h3>Ethics is about the 'other'</h3>
+                                    <p>Hand holding and supporting another hand Ethics is concerned with other people ©</p><br>
+                                    <p>At the heart of ethics is a concern about something or someone other than ourselves and our own desires and self-interest.</p><br>
+                                    <p>Ethics is concerned with other people's interests, with the interests of society, with God's interests, with "ultimate goods", and so on.</p><br>
+                                    <p>So when a person 'thinks ethically' they are giving at least some thought to something beyond themselves.</p><br><br>
+                                    <h3>Ethics as source of group strength</h3>
+                                    <p>One problem with ethics is the way it's often used as a weapon.</p><br>
+                                    <p>If a group believes that a particular activity is "wrong" it can then use morality as the justification for attacking those who practice that activity.</p><br>
+                                    <p>When people do this, they often see those who they regard as immoral as in some way less human or deserving of respect than themselves; sometimes with tragic consequences.</p><br>
+                                    <p>Good people as well as good actions</p><br>
+                                    <p>Ethics is not only about the morality of particular courses of action, but it's also about the goodness of individuals and what it means to live a good life.</p><br>
+                                    <p>Virtue Ethics is particularly concerned with the moral character of human beings.</p><br><br>
+                                    <h3>Searching for the source of right and wrong</h3>
+                                    <p>At times in the past some people thought that ethical problems could be solved in one of two ways:</p>
+                                    <p style="text-indent: 30px;">by discovering what God wanted people to do</p>
+                                    <p style="text-indent: 30px;">If a person did this properly they would be led to the right conclusion.</p><br>
+                                    <p>But now even philosophers are less sure that it's possible to devise a satisfactory and complete theory of ethics - at least not one that leads to conclusions.</p><br>
+                                    <p>Modern thinkers often teach that ethics leads people not to conclusions but to 'decisions'.</p><br>
+                                    <p>In this view, the role of ethics is limited to clarifying 'what's at stake' in particular ethical problems.</p><br>
+                                    <p>Philosophy can help identify the range of ethical methods, conversations and value systems that can be applied to a particular problem. But after these things have been made clear, each person must make their own individual decision as to what to do, and then react appropriately to the consequences.</p><br>
+                                    <br>
+                                    <b>Are ethical statements objectively true?</b><br>
+                                    <b>Do ethical statements provide information about anything other than human opinions and attitudes?</b><br><br>
+                                    <p>Ethical realists think that human beings discover ethical truths that already have an independent existence.</p><br>
+                                    <p>Ethical non-realists think that human beings invent ethical truths.</p><br>
+                                    <p>The problem for ethical realists is that people follow many different ethical codes and moral beliefs. So if there are real ethical truths out there (wherever!) then human beings don't seem to be very good at discovering them.</p><br>
+                                    <p>One form of ethical realism teaches that ethical properties exist independently of human beings, and that ethical statements give knowledge about the objective world.</p><br>
+                                    <p>To put it another way; the ethical properties of the world and the things in it exist and remain the same, regardless of what people think or feel - or whether people think or feel about them at all.</p><br>
+                                    <p>On the face of it, it [ethical realism] means the view that moral qualities such as wrongness, and likewise moral facts such as the fact that an act was wrong, exist in rerum natura, so that, if one says that a certain act was wrong, one is saying that there existed, somehow, somewhere, this quality of wrongness, and that it had to exist there if that act were to be wrong.</p>
+                                </div>
+                                <div class="p3-1">
+                                    <h3>Four ethical 'isms'</h3><br>
+                                    <b>When a person says "murder is bad" what are they doing?</b>
+                                    <br><br>
+                                    <p>That's the sort of question that only a philosopher would ask, but it's actually a very useful way of getting a clear idea of what's going on when people talk about moral issues.</p><br>
+                                    <p>The different 'isms' regard the person uttering the statement as doing different things.</p><br>
+                                    <p>We can show some of the different things I might be doing when I say 'murder is bad' by rewriting that statement to show what I really mean:</p><br>
+                                    <p>I might be making a statement about an ethical fact</p>
+                                    <p>"It is wrong to murder"</p>
+                                    <p>This is moral realism</p>
+                                    <p>I might be making a statement about my own feelings</p>
+                                    <p>"I disapprove of murder"</p>
+                                    <p>This is subjectivism</p>
+                                    <p>I might be expressing my feelings</p>
+                                    <p>"Down with murder"</p>
+                                    <p>This is emotivism</p>
+                                    <p>I might be giving an instruction or a prohibition</p>
+                                    <p>"Don't murder people"</p>
+                                    <p>This is prescriptivism</p>
+                                </div>
+                                <div class="p3-2">
+                                    <h3>Moral realism</h3>
+                                    <p>Moral realism is based on the idea that there are real objective moral facts or truths in the universe. Moral statements provide factual information about those truths.</p>
+                                </div>
+                                <div class="p4-1">
+                                    <h3>Subjectivism</h3>
+                                   <p>Subjectivism teaches that moral judgments are nothing more than statements of a person's feelings or attitudes, and that ethical statements do not contain factual truths about goodness or badness.</p><br>
+                                   <p>In more detail: subjectivists say that moral statements are statements about the feelings, attitudes and emotions that that particular person or group has about a particular issue.</p><br>
+                                   <p>If a person says something is good or bad they are telling us about the positive or negative feelings that they have about that something.</p><br>
+                                   <p>So if someone says 'murder is wrong' they are telling us that they disapprove of murder.</p><br>
+                                   <p>These statements are true if the person does hold the appropriate attitude or have the appropriate feelings. They are false if the person doesn't.</p>
+                                </div>
+                                <div class="p4-2">
+                                    <h3>Emotivism</h3>
+                                    <p>Emotivism is the view that moral claims are no more than expressions of approval or disapproval.</p><br>
+                                    <p>This sounds like subjectivism, but in emotivism a moral statement doesn't provide information about the speaker's feelings about the topic but expresses those feelings.</p><br>
+                                    <p>When an emotivist says "murder is wrong" it's like saying "down with murder" or "murder, yecch!" or just saying "murder" while pulling a horrified face, or making a thumbs-down gesture at the same time as saying "murder is wrong".</p><br>
+                                    <p>So when someone makes a moral judgement they show their feelings about something. Some theorists also suggest that in expressing a feeling the person gives an instruction to others about how to act towards the subject matter.</p>
+                                </div>
+                                <div class="p4-3">
+                                    <h3>Prescriptivism </h3>
+                                    <p>Prescriptivists think that ethical statements are instructions or recommendations.</p><br>
+                                    <p>So if I say something is good, I'm recommending you to do it, and if I say something is bad, I'm telling you not to do it.</p><br>
+                                    <p>There is almost always a prescriptive element in any real-world ethical statement: any ethical statement can be reworked (with a bit of effort) into a statement with an 'ought' in it. For example: "lying is wrong" can be rewritten as "people ought not to tell lies".</p>
+                                </div>
+                                <div class="p5-1">
+                                    <h2>Where does ethics come from?</h2>
+                                    <p>Philosophers have several answers to this question:</p><br>
+                                    <p>God and religion</p>
+                                    <p>Human conscience and intuition</p>
+                                    <p>a rational moral cost-benefit analysis of actions and their effects</p>
+                                    <p>the example of good human beings</p>
+                                    <p>a desire for the best for people in each unique situation</p>
+                                    <p>political power</p>
+                                    <p>God-based ethics - supernaturalism</p><br>
+                                    <p>Supernaturalism makes ethics inseparable from religion. It teaches that the only source of moral rules is God.</p>
+                                    <p>So, something is good because God says it is, and the way to lead a good life is to do what God wants.</p>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>Intuitionism</h3>
+                                    <p>Intuitionists think that good and bad are real objective properties that can't be broken down into component parts. Something is good because it's good; its goodness doesn't need justifying or proving.</p><br>
+                                    <p>Intuitionists think that goodness or badness can be detected by adults - they say that human beings have an intuitive moral sense that enables them to detect real moral truths.</p><br>
+                                    <p>They think that basic moral truths of what is good and bad are self-evident to a person who directs their mind towards moral issues.</p><br>
+                                    <p>So good things are the things that a sensible person realises are good if they spend some time pondering the subject.</p><br>
+                                    <p>Don't get confused. For the intuitionist:</p><br>
+                                    <p>moral truths are not discovered by rational argument</p>
+                                    <p>moral truths are not discovered by having a hunch</p>
+                                    <p>moral truths are not discovered by having a feeling</p>
+                                    <p>It's more a sort of moral 'aha' moment - a realisation of the truth.</p>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>Consequentialism</h3>
+                                    <p>This is the ethical theory that most non-religious people think they use every day. It bases morality on the consequences of human actions and not on the actions themselves.</p>
+                                    <br>
+                                    <p>Consequentialism teaches that people should do whatever produces the greatest amount of good consequences.</p><br>
+                                    <p>One famous way of putting this is 'the greatest good for the greatest number of people'.</p>
+                                    <br>
+                                    <p>The most common forms of consequentialism are the various versions of utilitarianism, which favour actions that produce the greatest amount of happiness.</p>
+                                    <br>
+                                    <p>Despite its obvious common-sense appeal, consequentialism turns out to be a complicated theory, and doesn't provide a complete solution to all ethical problems.</p>
+                                    <br>
+                                    <p>Two problems with consequentialism are:</p><br>
+                                    <p>it can lead to the conclusion that some quite dreadful acts are good
+                                        predicting and evaluating the consequences of actions is often very difficult
+                                        Non-consequentialism or deontological ethics
+                                        </p><br>
+                                    <p>Non-consequentialism is concerned with the actions themselves and not with the consequences. It's the theory that people are using when they refer to "the principle of the thing".</p><br>
+                                    <p>It teaches that some acts are right or wrong in themselves, whatever the consequences, and people should act accordingly.</p><br>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>Virtue ethics</h3>
+                                    <p>Virtue ethics looks at virtue or moral character, rather than at ethical duties and rules, or the consequences of actions - indeed some philosophers of this school deny that there can be such things as universal ethical rules.</p><br>
+                                    <p>Virtue ethics is particularly concerned with the way individuals live their lives, and less concerned in assessing particular actions.</p><br>
+                                    <p>It develops the idea of good actions by looking at the way virtuous people express their inner goodness in the things that they do.</p><br>
+                                    <p>To put it very simply, virtue ethics teaches that an action is right if and only if it is an action that a virtuous person would do in the same circumstances, and that a virtuous person is someone who has a particularly good character.</p>
+                                </div>
+
+                                <div class="p5-1">
+                                    <h3>Situation ethics</h3>
+                                    <p>Situation ethics rejects prescriptive rules and argues that individual ethical decisions should be made according to the unique situation.</p><br>
+                                    <p>Rather than following rules the decision maker should follow a desire to seek the best for the people involved. There are no moral rules or rights - each case is unique and deserves a unique solution.</p>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>Ethics and ideology</h3>
+                                    <p>Some philosophers teach that ethics is the codification of political ideology, and that the function of ethics is to state, enforce and preserve particular political beliefs.</p><br>
+                                    <p>They usually go on to say that ethics is used by the dominant political elite as a tool to control everyone else.</p><br>
+                                    <p>More cynical writers suggest that power elites enforce an ethical code on other people that helps them control those people, but do not apply this code to their own behaviour.</p><br>
+                                </div>
+                                <div class="p5-1">
+                                    <b>Are there universal moral rules?</b><br>
+                                    <p>One of the big questions in moral philosophy is whether or not there are unchanging moral rules that apply in all cultures and at all times.</p><br><br>
+                                    <h3>Moral absolutism</h3>
+                                    <p>Some people think there are such universal rules that apply to everyone. This sort of thinking is called moral absolutism.</p>
+                                    <br>
+                                    <p>Moral absolutism argues that there are some moral rules that are always true, that these rules can be discovered and that these rules apply to everyone.</p><br>
+                                    <p>Immoral acts - acts that break these moral rules - are wrong in themselves, regardless of the circumstances or the consequences of those acts.</p><br>
+                                    <p>Absolutism takes a universal view of humanity - there is one set of rules for everyone - which enables the drafting of universal rules - such as the Declaration of Human Rights.</p><br>
+                                    <p>Religious views of ethics tend to be absolutist.</p><br>
+                                    <p>Why people disagree with moral absolutism:</p><br>
+                                    <p>Many of us feel that the consequences of an act or the circumstances surrounding it are relevant to whether that act is good or bad</p><br>
+                                    <p>Absolutism doesn't fit with respect for diversity and tradition</p><br>
+                                    <p>Sword, reproduction in mid 15th-century style Different cultures have had different attitudes to issues like war ©</p>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>Moral relativism </h3>
+                                    <p>Moral relativists say that if you look at different cultures or different periods in history you'll find that they have different moral rules.</p><br>
+                                    <p>Therefore it makes sense to say that "good" refers to the things that a particular group of people approve of.</p><br>
+                                    <p>Moral relativists think that that's just fine, and dispute the idea that there are some objective and discoverable 'super-rules' that all cultures ought to obey. They believe that relativism respects the diversity of human societies and responds to the different circumstances surrounding human acts.</p>
+                                    <br><br>
+                                    <b>Why people disagree with moral relativism:</b><br><br>
+                                    <p>Many of us feel that moral rules have more to them than the general agreement of a group of people - that morality is more than a super-charged form of etiquette</p><br>
+                                    <p>Many of us think we can be good without conforming to all the rules of society</p><br>
+                                    <p>Moral relativism has a problem with arguing against the majority view: if most people in a society agree with particular rules, that's the end of the matter. Many of the improvements in the world have come about because people opposed the prevailing ethical view - moral relativists are forced to regard such people as behaving "badly"</p><br>
+                                    <p>Any choice of social grouping as the foundation of ethics is bound to be arbitrary</p><br>
+                                    <p>Moral relativism doesn't provide any way to deal with moral differences between societies</p><br>
+                                    <p>Moral somewhere-in-between-ism</p><br><br>
+                                    <p>Most non-philosophers think that both of the above theories have some good points and think that</p><br>
+                                    <p>there are a few absolute ethical rules</p><br>
+                                    <p>but a lot of ethical rules depend on the culture</p><br>
+                                </div>
+                                <div class="references">
+                                    <h3 style="color: black;">References</h3>
+                                    <a href="http://www.philippine-history.org/">http://www.philippine-history.org/</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="social-media-icons-footer">
+            <div class="footer-con">
+                <img src="../icons/twitter.png" alt="">
+                <img src="../icons/email.png" alt="">
+                <img src="../icons/facebook.png" alt="">
+                <img src="../icons/google.png" alt="">
+            </div>
+            <span id="f">&copy Electronic Ubiquitous Training <span id="b">|</span> All Rights Reserved 2020</span>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="../js/notmain.js"></script>  
+    <script src="../js/main.js"></script>
+</body>
+</html>

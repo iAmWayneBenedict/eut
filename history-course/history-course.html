@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="history-course.css">
+    <link rel="icon" href="../icons/logo2.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="web-logo">
+                <img src="../icons/our-logo.png" alt="">
+            </div>
+            <div class="navigation">
+                <ul id="myUl">
+                    <div class="sign-in-con" id="none">
+                        <button id="sign-in-btn" class="mobile-sign-in-btn">sign in</button>
+                    </div>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="drop-btn"><a href="#myCourses" class="courses-drop">Courses</a>
+                        <div class="drop-links">
+                            <a href="../html-course/html-course.html"><img src="../icons/html2.png" alt="">HTML</a>
+                            <a href="../cpp-course/cpp-course.html"><img src="../icons/cpp2.png" alt="">C++</a>
+                            <a href="../ethics-course/ethics-course.html"><img src="../icons/ethics2.png" alt="">Ethics</a>
+                            <a href="history-course.html"><img src="../icons/history2.png" alt="">History</a>
+                            <a href="../education-course/educ-course.html"><img src="../icons/educ2.png" alt="">Education</a>
+                            <a href="../physical-education-course/pe-course.html"><img src="../icons/pe2.png" alt="">Physical Education</a>
+                        </div>
+                    </li>
+                    <li><a href="#container">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="sign-in-con">
+                    <button id="sign-in-btn" class="web-sign-in-btn">sign in</button>
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Sign in, Sign up at iba pa -->
+        <!-- Don't worry naka fixed yan ngamin kaya okay lang na uda container.. PERO HANGGANG SIGN UP LANG!!!!! -->
+
+            <div id="blur"></div>
+            <div class="sign-up-bg">
+                <img src="../icons/signup.png" alt="">
+            </div>
+            <div class="sign-in-bg">
+                <img src="../icons/signin.png" alt="">
+            </div>
+
+                                    <!-- Sign In Section -->
+
+                                    <div class="sign-in-container">
+                                        <div class="sign-in-con">
+                                            <div class="hamburger2">
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                            <div class="sign-in-title-img">
+                                                <img src="../icons/sign-in.png" alt="">
+                                                <div class="sign-in-title">
+                                                    <h1>Sign In</h1>
+                                                </div>
+                                            </div>
+                                            <div class="sign-in-content">
+                                                <div class="successful">
+                                                    <span id="hello">Sign up successful. Please sign in now.</span>
+                                                </div>
+                                                <div class="successful2">
+                                                    <span id="hello">Incorrect email or password.</span>
+                                                </div>
+                                                <div class="successful4">
+                                                    <span id="hello">Please input correctly in all the space provided below.</span>
+                                                </div>
+                                                <div class="input-con">
+                                                    <input type="text" id="sign-in-input-email" autocomplete="off" required>
+                                                    <label for="email" class="label-name"><span class="content-name">Email</span></label>
+                                                </div>
+                                                
+                                                <div class="input-con">
+                                                    <input type="password" required id="sign-in-input-password">
+                                                    <label for="password" class="label-name"><span class="content-name">Password</span></label>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="f-pass">
+                                                <span><input type="checkbox">Keep me sign in</span>
+                                                <p id="now">Forgot Password</p>
+                                            </div>
+                        
+                                            <div class="button">
+                                                <button id="new-sign-in-btn">Sign In</button>
+                                            </div>
+                        
+                                            <div class="sign-up">
+                                                <p>Not a member?</p>
+                                                <span id="sign-up-now">Sign Up</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Sign Up Section -->
+                        
+                                    <div class="sign-up-container">
+                                        <div class="sign-up-con">
+                                                <div class="hamburger3">
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <div class="sign-up-title-img">
+                                                    <img src="../icons/sign-in.png" alt="">
+                                                    <div class="sign-up-title">
+                                                        <h1>Sign Up</h1>
+                                                    </div>
+                                                </div>
+                                                <div class="sign-up-content">
+                                                    <div class="error">
+                                                        <span id="yeah">Please input correctly in all the space provided below.</span>
+                                                    </div>
+                                                    <div class="error5">
+                                                        <span id="y">Email must contain '@gmail.com'.</span>
+                                                    </div>
+                                                    <div class="error2">
+                                                        <span id="y">Password must contain of 8 characters and above.</span>
+                                                    </div>
+                                                    <div class="error6">
+                                                        <span id="y">Please check the box below to continue signup.</span>
+                                                    </div>
+                        
+                                                    <div class="input-con">
+                                                        <input type="text" required id="sign-up-user-name">
+                                                        <label for="username" class="label-name"><span class="content-name">Username</span></label>
+                                                    </div>
+                        
+                                                    <div class="input-con">
+                                                        <input type="text" required id="sign-up-email">
+                                                        <label for="email" class="label-name"><span class="content-name">Email</span></label>
+                                                    </div>
+                                                    <div class="input-con">
+                                                        <input type="password" required id="sign-up-password">
+                                                        <label for="password" class="label-name"><span class="content-name">Password</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="r-updates">
+                                                    <input type="checkbox" id="myCheckbox">
+                                                    <p>I'd like to recieve updates on my email.</p>
+                                                </div>
+                        
+                                                <div class="button2">
+                                                <button id="new-sign-up-btn" type="submit">Sign Up</button>
+                                                </div>
+                        
+                                                <div class="terms-con-and-pr-po">
+                                                    <p>By signing up you acknowledge and accept out <span>Terms & Conditions</span> and <span>Privacy Policy</span></p>
+                                                </div>
+                        
+                                                <div class="already-member">
+                                                    <p>Already a member? <span id="close-sign-up">Sign In</span></p>
+                                                </div>
+                                        </div>
+                                    </div>
+                        
+                                    <!-- Forgot password Section -->
+                        
+                                    <div class="fpass-container">
+                                        <div class="fpass-con">
+                                            <div class="hamburger4">
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                            <div class="fpass-title-img">
+                                                <div class="fpass-title">
+                                                    <h1>Reset Password</h1>
+                                                </div>
+                                            </div>
+                                            <div class="fpass-content">
+                                                <div class="successful20">
+                                                    <span id="hello">Incorrect password.</span>
+                                                </div>
+                                                <div class="successful30">
+                                                    <span id="hello">Password must contain 8 characters and above.</span>
+                                                </div>
+                                                <div class="successful40">
+                                                    <span id="hello">Reset password successful.</span>
+                                                </div>
+                                                <div class="input-con">
+                                                    <input type="password" required id="fpass-input-password">
+                                                    <label for="password" class="label-name"><span class="content-name">New Password</span></label>
+                                                </div>
+                                                <div class="input-con">
+                                                    <input type="password" required id="fpass-new-password">
+                                                    <label for="password" class="label-name"><span class="content-name">Confirm Password</span></label>
+                                                </div>
+                                                <div class="button2">
+                                                    <button id="new-confirm-btn" type="submit">Confirm</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+            <div class="container">
+                <div class="main-course-container">
+                    <div class="main-course-con">
+                        <div class="course-title-con">
+                            <img src="../icons/history2.png" alt="">
+                            <div class="course-title">
+                                <h1>Philippine History</h1>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <div class="pre-spanish-era">
+                                <h3>Pre-Spanish Times</h3>
+                                <div class="p1-1">
+                                    <p>There are two theories on the origins of the first Filipinos, the inhabitants of what will later be called the Philippine Islands and eventually the Republic of the Philippines. See the Early Inhabitants of the Philippine Islands.</p>
+                                </div>
+                                <div class="p1-2">
+                                    <p>
+                                        In the beginning of the 3rd century, the inhabitants of Luzon island were in contact and trading with East Asian sea-farers and merchants including the Chinese. In the 1400's the Japanese also established a trading post at Aparri in Northern Luzon.
+                                    </p>
+                                </div>
+                                <div class="p1-3">
+                                    <p>
+                                        In 1380, Muslim Arabs arrived at the Sulu Archipelago and established settlements which became mini-states ruled by a Datu. They introduced Islam in the southern parts of the archipelago including some parts of Luzon and were under the control of the Muslim sultans of Borneo. They had a significant influence over the region for a couple of hundreds years. The Malay Muslims remained dominant in these parts until the 16th century.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spanish-era">
+                                <h3>Philippine History During the Spanish Colonial Times</h3>
+                                <div class="p2-1">
+                                    <p>
+                                        In 1521, Ferdinand Magellan, a Portuguese explorer who was serving the Spanish crown, landed in Samar Island on his voyage to circumvent the globe. He explored the islands and named it Archipelago of San Lazaro. Magellan was killed during a rebellion led by a Datu named Lapu Lapu in Mactan Island (adjacent to Cebu Island). Spain continued to send expeditions to the island for financial gain and on the fourth expedition, Commander Ruy Lopez de Villalobos, named the islands: Philippines, after Prince Philip (later King Philip II), heir to the Spanish throne. Spain ruled the Philippines for 356 years.
+                                    </p>
+                                </div>
+                                <div class="p2-2">
+                                    <p>
+                                        King Philip 2, SpainIn 1565, King Philip II appointed Miguel Lopez de Legazpi as the first Governor-General of the Philippines. Legazpi chose Manila to be it's capital because of it's natural harbor. Spain's legacy was the conversion of the people to Catholicism and the creation of the privileged landed class. Because of abuses and suppression of the Spaniards, a Propaganda Movement emerged with the aims for equality between Filipinos and Spaniards. The arrest of propagandist Dr. Jose Rizal and execution in 1896 gave fresh momentum to Filipino rebels to fight against Spain.
+                                    </p>
+                                </div>
+                                <div class="p2-3">
+                                    <p>
+                                        The secret society of the Katipunan, founded by Andres Bonifacio attacked the Spanish Garrison in San Juan with little success, while Katipuneros in Cavite Province headed by Emilio Aguinaldo defeated the Guardia Civil in Cavite. Aguinaldo's victories lead him to be elected as head of the Katipunan. The factions of Bonifacio & Aguinaldo fought and lead to the trial and execution of Bonifacio on Aguinaldo's orders. Aguinaldo later drafted a constitution and established the Republic of Biak-na-Bato in Bulacan province. In 1897, an impasse between the Spanish government and Aguinaldo arose. After negotiations between the two sides, Aguinaldo accepted an amnesty from the Spaniards and US$ 800,000.00 in exchange for his exile to Hong Kong with his government.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="american-era">
+                                <h3>Philippine History During the American Era</h3>
+                                <div class="p3-1">
+                                    <p>
+                                        The Spanish-American war which started in Cuba, changed the history of the Philippines. On May 1, 1898, the Americans led by U.S. Navy Admiral George Dewey, in participation of Emilio Aguinaldo, attacked the Spanish Navy in Manila Bay. Faced with defeat, the Philippines was ceded to the United States by Spain in 1898 after a payment of US$ 20 million to Spain in accordance with the "Treaty of Paris" ending the Spanish-American War. On June 12, 1898, Filipinos led by Emilio Aguinaldo declared independence. This declaration was opposed by the U.S. who had plans of taking over the colony. And this led to a guerrilla war against the Americans. In 1901, Aguinaldo was captured and declared allegiance to the United States. On the same year, William Howard Taft was appointed as the first U.S. governor of the Philippines. The U.S. passed the Jones Law in 1916 establishing an elected Filipino legislature with a House of representatives & Senate. In 1934, the Tydings-McDuffie Act was passed by the U.S. Congress, established the Commonwealth of the Philippines and promised Philippine independence by 1946. The law also provided for the position of President of the Commonwealth of the Philippines. On the May 14, 1935 elections, Manuel L. Quezon won the position of President of the Philippine Commonwealth.
+                                    </p>
+                                </div>
+                                <div class="p3-2">
+                                    <p>
+                                        In accordance with the Tydings-McDuffie Act of 1934, The Philippines was given independence on July 4, 1946 and the Republic of the Philippines was born.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="japanese-era">
+                                <h3>Philippine History During the Japanese Occupation</h3>
+                                <div class="p4-1">
+                                    <p>
+                                        On December 8, 1941, the Japanese invades the Philippines hours after bombing Pear Harbor in Hawaii. While the forces of General Douglas MacArthurGen. Douglas MacArthur retreated to Bataan, the Commonwealth government of President Quezon moved to Corregidor Island. Manila was declared an open city to prevent further destruction. After the fall of Bataan on April 9, 1942 and Corregidor, In March 1942, MacArthur & Quezon fled the country and by invitation of President Roosevelt, the Commonwealth government went into exile to Washington D.C. American and Filipino forces surrendered in May 6, 1942. Soon a guerrilla war against the Japanese was fought by the Philippine & American Armies while Filipinos were enduring the cruelty of the Japanese military against civilians.
+                                    </p>
+                                </div>
+                                <div class="p4-2">
+                                    <p>
+                                        Prior to Quezon's exile, he advised Dr. Jose P. Laurel to head and cooperate with the Japanese civilian government in the hope that the collaboration will lead to a less brutality of the Japanese towards the Filipinos. Rightly or wrongly, President Laurel and his war time government was largely detested by the Filipinos.
+                                    </p>
+                                </div>
+                                <div class="p4-3">
+                                    <p>
+                                        In October 1944, Gen. MacArthur with President Sergio Osmeña (who assumed the presidency after Quezon died on August 1, 1944 in exile in Saranac Lake, New York) returned and liberated the Philippines from the Japanese.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="philippine-republic">
+                                <h3>The Philippine Republic</h3>
+                                <div class="p5-1">
+                                    <p>
+                                        On July 4, 1946, Manuel Roxas of the Nationalista Party was inaugurated as the first President of the Republic of the Philippines. Roxas died in April 1948. He was succeeded by Elpidio Quirino. Both Roxas & Quirino had to deal with the Hukbalahap, a large anti-Japanese guerrilla organization which became a militant group that discredited the ruling elite. The group was eventually put down by Pres. Quirino's Secretary of Defense, Ramon Magsaysay.
+                                    </p>
+                                </div>
+                                <div class="p5-2">
+                                    <p>
+                                        Magsaysay defeated Quirino in the 1953 elections. He was a popular president and largely loved by the people. Magsaysay died in an airplane crash on March 17, 1957 and was succeeded by Carlos Garcia.
+                                    </p>
+                                </div>
+
+                                <div class="p5-3">
+                                    <p>
+                                        Diosdado Macapagal won the 1961 presidential elections and soon after he changed history by declaring June 12 as independence day - the day Emilio Aguinaldo declared independence in Cavite from Spain in 1898. Aguinaldo was the guest of honour during the fist Independence Day celebrations in 1962.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="references">
+                            <h3>References</h3>
+                            <a href="http://www.philippine-history.org/">http://www.philippine-history.org/</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="social-media-icons-footer">
+            <div class="footer-con">
+                <img src="../icons/twitter.png" alt="">
+                <img src="../icons/email.png" alt="">
+                <img src="../icons/facebook.png" alt="">
+                <img src="../icons/google.png" alt="">
+            </div>
+            <span id="f">&copy Electronic Ubiquitous Training <span id="b">|</span> All Rights Reserved 2020</span>
+        </div>
+    </footer>
+
+
+
+
+    <script src="../js/notmain.js"></script>  
+    <script src="../js/main.js"></script>
+</body>
+</html>

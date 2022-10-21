@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++</title>
+    <link rel="stylesheet" href="cpp-course.css">
+    <link rel="icon" href="../icons/logo2.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="web-logo">
+                <img src="../icons/our-logo.png" alt="">
+            </div>
+            <div class="navigation">
+                <ul id="myUl">
+                    <div class="sign-in-con" id="none">
+                        <button id="sign-in-btn" class="mobile-sign-in-btn">sign in</button>
+                    </div>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="drop-btn"><a href="#myCourses" class="courses-drop">Courses</a>
+                        <div class="drop-links">
+                            <a href="../html-course/html-course.html"><img src="../icons/html2.png" alt="">HTML</a>
+                            <a href="cpp-course.html"><img src="../icons/cpp2.png" alt="">C++</a>
+                            <a href="../ethics-course/ethics-course.html"><img src="../icons/ethics2.png" alt="">Ethics</a>
+                            <a href="../history-course/history-course.html"><img src="../icons/history2.png" alt="">History</a>
+                            <a href="../education-course/educ-course.html"><img src="../icons/educ2.png" alt="">Education</a>
+                            <a href="../physical-education-course/pe-course.html"><img src="../icons/pe2.png" alt="">Physical Education</a>
+                        </div>
+                    </li>
+                    <li><a href="#container">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="sign-in-con">
+                    <button id="sign-in-btn" class="web-sign-in-btn">sign in</button>
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div id="blur"></div>
+            <div class="sign-up-bg">
+                <img src="../icons/signup.png" alt="">
+            </div>
+            <div class="sign-in-bg">
+                <img src="../icons/signin.png" alt="">
+            </div>
+            <!-- Sign In Section -->
+
+            <div class="sign-in-container">
+                <div class="sign-in-con">
+                    <div class="hamburger2">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="sign-in-title-img">
+                        <img src="../icons/sign-in.png" alt="">
+                        <div class="sign-in-title">
+                            <h1>Sign In</h1>
+                        </div>
+                    </div>
+                    <div class="sign-in-content">
+                        <div class="successful">
+                            <span id="hello">Sign up successful. Please sign in now.</span>
+                        </div>
+                        <div class="successful2">
+                            <span id="hello">Incorrect email or password.</span>
+                        </div>
+                        <div class="successful4">
+                            <span id="hello">Please input correctly in all the space provided below.</span>
+                        </div>
+                        <div class="input-con">
+                            <input type="text" id="sign-in-input-email" autocomplete="off" required>
+                            <label for="email" class="label-name"><span class="content-name">Email</span></label>
+                        </div>
+                        
+                        <div class="input-con">
+                            <input type="password" required id="sign-in-input-password">
+                            <label for="password" class="label-name"><span class="content-name">Password</span></label>
+                        </div>
+                    </div>
+
+                    <div class="f-pass">
+                        <span><input type="checkbox">Keep me sign in</span>
+                        <p id="now">Forgot Password</p>
+                    </div>
+
+                    <div class="button">
+                        <button id="new-sign-in-btn">Sign In</button>
+                    </div>
+
+                    <div class="sign-up">
+                        <p>Not a member?</p>
+                        <span id="sign-up-now">Sign Up</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sign Up Section -->
+
+            <div class="sign-up-container">
+                <div class="sign-up-con">
+                        <div class="hamburger3">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="sign-up-title-img">
+                            <img src="../icons/sign-in.png" alt="">
+                            <div class="sign-up-title">
+                                <h1>Sign Up</h1>
+                            </div>
+                        </div>
+                        <div class="sign-up-content">
+                            <div class="error">
+                                <span id="yeah">Please input correctly in all the space provided below.</span>
+                            </div>
+                            <div class="error5">
+                                <span id="y">Email must contain '@gmail.com'.</span>
+                            </div>
+                            <div class="error2">
+                                <span id="y">Password must contain of 8 characters and above.</span>
+                            </div>
+                            <div class="error6">
+                                <span id="y">Please check the box below to continue signup.</span>
+                            </div>
+
+                            <div class="input-con">
+                                <input type="text" required id="sign-up-user-name">
+                                <label for="username" class="label-name"><span class="content-name">Username</span></label>
+                            </div>
+
+                            <div class="input-con">
+                                <input type="text" required id="sign-up-email">
+                                <label for="email" class="label-name"><span class="content-name">Email</span></label>
+                            </div>
+                            <div class="input-con">
+                                <input type="password" required id="sign-up-password">
+                                <label for="password" class="label-name"><span class="content-name">Password</span></label>
+                            </div>
+                        </div>
+                        <div class="r-updates">
+                            <input type="checkbox" id="myCheckbox">
+                            <p>I'd like to recieve updates on my email.</p>
+                        </div>
+
+                        <div class="button2">
+                        <button id="new-sign-up-btn" type="submit">Sign Up</button>
+                        </div>
+
+                        <div class="terms-con-and-pr-po">
+                            <p>By signing up you acknowledge and accept out <span>Terms & Conditions</span> and <span>Privacy Policy</span></p>
+                        </div>
+
+                        <div class="already-member">
+                            <p>Already a member? <span id="close-sign-up">Sign In</span></p>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Forgot password Section -->
+
+            <div class="fpass-container">
+                <div class="fpass-con">
+                    <div class="hamburger4">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="fpass-title-img">
+                        <div class="fpass-title">
+                            <h1>Reset Password</h1>
+                        </div>
+                    </div>
+                    <div class="fpass-content">
+                        <div class="successful20">
+                            <span id="hello">Incorrect password.</span>
+                        </div>
+                        <div class="successful30">
+                            <span id="hello">Password must contain 8 characters and above.</span>
+                        </div>
+                        <div class="successful40">
+                            <span id="hello">Reset password successful.</span>
+                        </div>
+                        <div class="input-con">
+                            <input type="password" required id="fpass-input-password">
+                            <label for="password" class="label-name"><span class="content-name">New Password</span></label>
+                        </div>
+                        <div class="input-con">
+                            <input type="password" required id="fpass-new-password">
+                            <label for="password" class="label-name"><span class="content-name">Confirm Password</span></label>
+                        </div>
+                        <div class="button2">
+                            <button id="new-confirm-btn" type="submit">Confirm</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="main-course-container">
+                    <div class="main-course-con">
+                        <div class="course-title-con">
+                            <img src="../icons/cpp2.png" alt="">
+                            <div class="course-title">
+                                <h1>C++ Programming Language</h1>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                                <div class="p1-1">
+                                    <b style="font-size: 20px;">Programming Languages </b>
+                                    <ul>
+                                        <li>High-level languages include Basic, FORTRAN, COBOL, Pascal, C, C++, C#, and Java</li>
+                                        <li>Compiler: translates a program written in a high-level language to machine language</li>
+                                    </ul>
+                                </div>
+                                <div class="p1-2">
+                                    <h3>Processing a C++ Program</h3>
+                                    <ol type="1">
+                                        <li>#include < iostream > </li>
+                                        <li>using namespace std;</li>
+                                        <li>int main() </li>
+                                        <li>{</li>
+                                        <li>cout << “Hello, World!” << endl; </li>
+                                        <li>return 0; </li>
+                                        <li>}</li>
+                                    </ol>
+                                </div>
+                                <div class="p1-3">
+                                    <h3>Sample Run: Hello, World!</h3>
+                                    <p>To execute a C++ program:</p>
+                                    <ul style="list-style: none;">
+                                        <li>– Use an editor to create a source program in C++ </li>
+                                        <li>– Preprocessor directives begin with # and are processed by the preprocessor </li>
+                                        <li>– Use the compiler to: </li>
+                                        <ul>
+                                            <li>Check that the program obeys the rules </li>
+                                        <li>Translate into machine language</li>
+                                        </ul>
+                                        <li>– Linker: </li>
+                                        <ul>
+                                            <li>Combines object program with other programs provided by the SDK to create executable code </li>
+                                        </ul>
+                                        <li>– Loader:</li>
+                                        <ul>
+                                            <li>Loads executable program into main memory </li>
+                                        </ul>
+                                        <li>– The last step is to execute the program</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="p2-1">
+                                    <h3>Problem Analysis–Coding–Execution Cycle</h3>
+                                    <ul>
+                                        <li>Programming is a process of problem solving</li>
+                                        <li>One problem-solving technique:</li>
+                                        <ul style="list-style: none;">
+                                            <li>– Analyze the problem</li>
+                                            <li>– Outline the problem requirements </li>
+                                            <li>– Design steps (algorithm) to solve the problem</li>
+                                        </ul>
+                                        <li>Algorithm:</li>
+                                        <ul style="list-style: none;">
+                                            <li>– Step-by-step problem-solving process </li>
+                                            <li>– Solution achieved in finite amount of time</li>
+                                        </ul>
+                                        <li>Run code through compiler </li>
+                                        <li>If compiler generates errors</li>
+                                        <ul style="list-style: none;">
+                                            <li> – Look at code and remove errors</li>
+                                            <li> – Run code again through compiler </li>
+                                        </ul>
+                                        <li>If there are no syntax errors</li>
+                                        <ul style="list-style: none;">
+                                            <li> – Compiler generates equivalent machine code </li>
+                                        </ul>
+                                        <li>Linker links machine code with system resources</li>
+                                        <li>Once compiled and linked, loader can place program into main memory for execution </li>
+                                        <li>The final step is to execute the program </li>
+                                        <li>Compiler guarantees that the program follows the rules of the language</li>
+                                        <ul style="list-style: none;">
+                                            <li> – Does not guarantee that the program will run correctly</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div class="p2-2">
+                                    <h3>Basic Structure of a C++ Program</h3>
+                                    <ul>
+                                        <li>Preprocessor directives – lines included in the code of programs preceded by a hash sign (#)</li>
+                                        <li>Header files – contain definitions of Functions and Variables, which is imported or used into any C++ program by using the preprocessor #include statement</li>
+                                        <li>Abstract Container (namespace) – a declarative region that provides a scope to the identifiers (names of the types, function, variables etc.) inside it.</li>
+                                        <li>Function (std) – standard namespace used in C++.</li>
+                                        <li>The body of the program – the body of the program characterized by the function main(). The execution of a C++ program always starts here. It is a standardized convention that function main() is declared with an int preceding it. int is the return value type of the function main().</li>
+                                    </ul>
+                                </div>
+                                <div class="p2-3">
+                                    <h3>Structure of a C++ Program</h3>
+                                    <ul>
+                                        <li>Header File Declaration Section </li>
+                                        <li>Global Declaration Section </li>
+                                        <li>Class Declaration and Method Declaration Section </li>
+                                        <li>Main Function </li>
+                                        <li>Method Definition Section</li>
+                                        <br>
+                                        <br>
+                                        <li>Header File Declaration Section </li>
+                                        <ul style="list-style: none;">
+                                            <li>– Header Files used in the program are listed here. </li>
+                                            <li>– Header files provides prototype declarations for different library functions.</li>
+                                            <li> – Basically all preprocessor directives are written in this section.</li>
+                                        </ul>
+                                        <li>Global Declaration Section</li>
+                                        <ul style="list-style: none;">
+                                            <li>– Global Variables are declared here. </li>
+                                            <li>– Global Declaration include </li>
+                                        </ul>
+                                        <li>Declaring structure </li>
+                                        <li>Declaring class</li>
+                                        <li>Declaring variable</li>
+                                    </ul>
+                                </div>
+                                <div class="p3-1">
+                                    <h3>The Basics of a C++ Program</h3>
+                                    <ul>
+                                        <li>Function: collection of statements; when executed, accomplishes something – May be predefined or standard</li>
+                                        <li>Syntax: rules that specify which statements (instructions) are legal</li>
+                                        <li>Programming language: a set of rules, symbols, and special words</li>
+                                        <li>Semantic rule: meaning of the instruction</li>
+                                        <li>Comments are for the reader, not the compiler</li>
+                                        <li>Two types: </li>
+                                        <ul style="list-style: none;">
+                                            <li>– Single line <p>// This is a C++ program. It prints the sentence: </p><p>// Welcome to C++ Programming.</p></li>
+                                            <li>– Multiple line <p>/* </p><p>You can include comments that can occupy several lines. </p><p>*/</p></li>
+                                        </ul>
+                                        <li>Special symbols   + ? - , * <= / != . == ;  >=</li>
+                                    </ul>
+                                </div>
+                                <div class="p3-2">
+                                    <h3>Keywords</h3>
+                                    <ul>
+                                        <li>Reserved words, keywords, or word symbols</li>
+                                        <li>Include: – int – float – double – char – const – void – return</li>
+                                    </ul>
+                                </div>
+                                <div class="p4-1">
+                                    <h3>C++ Primitive Data Types</h3>
+                                    <ul>
+                                        <li>These data types are built-in or predefined data types and can be used directly by the user to declare variables.</li>
+                                        <li>Primitive data types available in C++ are: – Integer (int) – Character (char) – Boolean (bool) – Floating Point (float) – Double Floating Point (double)</li>
+                                    </ul>
+                                </div>
+                                <div class="p4-2">
+                                    <h3>Integer Data Type</h3>
+                                    <ul>
+                                        <li>Keyword: int </li>
+                                        <li>Examples: -6728     0     78     +763 </li>
+                                        <li>Positive integers do not need a + sign </li>
+                                        <li>No commas are used within an integer – Commas are used for separating items in a list</li>
+                                    </ul>
+                                </div>
+                                <div class="p4-3">
+                                    <h3>Boolean Data Type </h3>
+                                    <ul>
+                                        <li>Keyword: bool </li>
+                                        <li>bool type </li>
+                                        <ul style="list-style: none;">
+                                            <li>– Two values: true and false </li>
+                                            <li>– Manipulate logical (Boolean) expressions </li>
+                                        </ul>
+                                        <li>true and false are called logical values </li>
+                                        <li>bool, true, and false are reserved words</li>
+                                        <br>
+                                        <br>
+                                        <li>Keyword: char </li>
+                                        <li>The smallest data type </li>
+                                        <li>Used for characters: letters, digits, and special symbols </li>
+                                        <li>Each character is enclosed in single quotes – 'A', 'a', '0', '*', '+', '$', '&' </li>
+                                        <li>A blank space is a character and is written ‘  ’, with a space left between the single quotes</li>
+                                    </ul>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>Floating-Point Data Types</h3>
+                                    <ul>
+                                        <li>Keyword: float, double </li>
+                                        <li>C++ uses scientific notation to represent real numbers (floating-point notation)</li>
+                                        <li>float: represents any real number</li>
+                                        <ul style="list-style: none;">
+                                            <li> – Range: -3.4E+38 to 3.4E+38 (four bytes) </li>
+                                            <li>– Maximum number of significant digits (decimal places) for float values is 6 or 7</li>
+                                        </ul>
+                                        <li>double: represents any real number – Range: -1.7E+308 to 1.7E+308 (eight bytes) – Maximum number of significant digits for double is 15 </li>
+                                        <li>Precision: maximum number of significant digits – Float values are called single precision – Double values are called double precision</li>
+                                    </ul>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>String</h3>
+                                    <ul>
+                                        <li>Programmer-defined type supplied in ANSI/ISO Standard C++ library</li>
+                                        <li>Sequence of zero or more characters </li>
+                                        <li>Enclosed in double quotation marks </li>
+                                        <li>Null: a string with no characters </li>
+                                        <li>Each character has relative position in string – Position of first character is 0 </li>
+                                        <li>Length of a string is number of characters in it – Example: length of "William Jacob" is 13</li>
+                                    </ul>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>Variable Declaration and Initialization</h3>
+                                    <ul>
+                                        <li>All variables must declared before use.</li>
+                                        <ul style="list-style: none;">
+                                            <li>At the top of the program </li>
+                                            <li>Just before use. </li>
+                                        </ul>
+                                        <li>Commas are used to separate identifiers of the same type. int count, age;</li>
+                                        <li>Variables can be initialized to a starting value when they are declared int count = 0; int age, count = 0;</li>
+                                    </ul>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>Constants </h3>
+                                    <ul>
+                                        <li>The following are examples of declaring named constants:
+                                            <p>const int MONTHS_PER_YR = 12; const double PI = 3.14159; const char YES = ‘Y’; const string MSG1 = “This is message one”; const bool RESULT = true; </p>
+                                        </li>
+                                        <li>NOTE:  These are all constants and their initial values may NOT be changed once the program begins execution.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p5-1">
+                                    <h3>Input / Output Statements </h3>
+                                    <ul>
+                                        <li>Console input (cin) – EX:  cin >> miles; – The value entered by the user on the keyboard (console input) is stored into the variable named miles</li>
+                                        <li>Console output (cout) – EX: cout << kms; – The current value of kms is displayed on the monitor (console output) </li>
+                                        <li>NOTE: Both cin and cout require the #include <iostream> compiler directive</li>
+                                    </ul>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>Arithmetic Operators and Operator Precedence </h3>
+                                    <ul>
+                                        <li>C++ arithmetic operators: – + addition – - subtraction – * multiplication – / division – % modulus operator </li>
+                                        <li>+, -, *, and / can be used with integral and floatingpoint data types </li>
+                                        <li>Operators can be unary or binary</li>
+                                    </ul>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>Order of Precedence </h3>
+                                    <ul>
+                                        <li>All operations inside of () are evaluated first</li>
+                                        <li>*, /, and % are at the same level of precedence and are evaluated next </li>
+                                        <li>+ and – have the same level of precedence and are evaluated last </li>
+                                        <li>When operators are on the same level – Performed from left to right (associativity) 3 * 7 - 6 + 2 * 5 / 4 + 6 means (((3 * 7) – 6) + ((2 * 5) / 4 )) + 6</li>
+                                    </ul>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>Expressions </h3>
+                                    <ul>
+                                        <li>If all operands are integers – Expression is called an integral expression </li>
+                                        <li>Yields an integral result </li>
+                                        <li>Example: 2 + 3 * 5 </li>
+                                        <li>If all operands are floating-point – Expression is called a floating-point expression </li>
+                                        <li>Yields a floating-point result • Example: 12.8 * 17.5 - 34.50</li>
+                                    </ul>
+                                </div>
+                                <div class="p5-1">
+                                    <h3>Mixed Expressions </h3>
+                                    <ul>
+                                        <li>Mixed expression: – Has operands of different data types – Contains integers and floating-point </li>
+                                        <li>Examples of mixed expressions: 2 + 3.5 6  /  4 + 3.9 5.4  *  2 – 13.6 + 18  /  2</li>
+                                        <br>
+                                        <br>
+                                        <li>Evaluation rules: – If operator has same types of operands</li>
+                                        <li>Evaluated according to the type of the operands </li>
+                                        <li>If operator has both types of operands – Integer is changed to floating-point – Operator is evaluated – Result is floating-point </li>
+                                        <li>Entire expression is evaluated according to precedence rules</li>
+                                        <li>Increment operator: increment variable by 1 – Pre-increment: ++variable – Post-increment: variable++ </li>
+                                        <li>Decrement operator: decrement variable by 1 – Pre-decrement: --variable – Post-decrement: variable-</li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="social-media-icons-footer">
+            <div class="footer-con">
+                <img src="../icons/twitter.png" alt="">
+                <img src="../icons/email.png" alt="">
+                <img src="../icons/facebook.png" alt="">
+                <img src="../icons/google.png" alt="">
+            </div>
+            <span id="f">&copy Electronic Ubiquitous Training <span id="b">|</span> All Rights Reserved 2020</span>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="../js/notmain.js"></script>  
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sex Education</title>
+    <link rel="stylesheet" href="educ-course.css">
+    <link rel="icon" href="../icons/logo2.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="web-logo">
+                <img src="../icons/our-logo.png" alt="">
+            </div>
+            <div class="navigation">
+                <ul id="myUl">
+                    <div class="sign-in-con" id="none">
+                        <button id="sign-in-btn" class="mobile-sign-in-btn">sign in</button>
+                    </div>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="drop-btn"><a href="#myCourses" class="courses-drop">Courses</a>
+                        <div class="drop-links">
+                            <a href="../html-course/html-course.html"><img src="../icons/html2.png" alt="">HTML</a>
+                            <a href="../cpp-course/cpp-course.html"><img src="../icons/cpp2.png" alt="">C++</a>
+                            <a href="../ethics-course/ethics-course.html"><img src="../icons/ethics2.png" alt="">Ethics</a>
+                            <a href="../history-course/history-course.html"><img src="../icons/history2.png" alt="">History</a>
+                            <a href="educ-course.html"><img src="../icons/educ2.png" alt="">Education</a>
+                            <a href="../physical-education-course/pe-course.html"><img src="../icons/pe2.png" alt="">Physical Education</a>
+                        </div>
+                    </li>
+                    <li><a href="#container">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="sign-in-con">
+                    <button id="sign-in-btn" class="web-sign-in-btn">sign in</button>
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Sign in, Sign up at iba pa -->
+        <!-- Don't worry naka fixed yan ngamin kaya okay lang na uda container.. PERO HANGGANG SIGN UP LANG!!!!! -->
+
+            <div id="blur"></div>
+            <div class="sign-up-bg">
+                <img src="../icons/signup.png" alt="">
+            </div>
+            <div class="sign-in-bg">
+                <img src="../icons/signin.png" alt="">
+            </div>
+
+                                    <!-- Sign In Section -->
+
+                                    <div class="sign-in-container">
+                                        <div class="sign-in-con">
+                                            <div class="hamburger2">
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                            <div class="sign-in-title-img">
+                                                <img src="../icons/sign-in.png" alt="">
+                                                <div class="sign-in-title">
+                                                    <h1>Sign In</h1>
+                                                </div>
+                                            </div>
+                                            <div class="sign-in-content">
+                                                <div class="successful">
+                                                    <span id="hello">Sign up successful. Please sign in now.</span>
+                                                </div>
+                                                <div class="successful2">
+                                                    <span id="hello">Incorrect email or password.</span>
+                                                </div>
+                                                <div class="successful4">
+                                                    <span id="hello">Please input correctly in all the space provided below.</span>
+                                                </div>
+                                                <div class="input-con">
+                                                    <input type="text" id="sign-in-input-email" autocomplete="off" required>
+                                                    <label for="email" class="label-name"><span class="content-name">Email</span></label>
+                                                </div>
+                                                
+                                                <div class="input-con">
+                                                    <input type="password" required id="sign-in-input-password">
+                                                    <label for="password" class="label-name"><span class="content-name">Password</span></label>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="f-pass">
+                                                <span><input type="checkbox">Keep me sign in</span>
+                                                <p id="now">Forgot Password</p>
+                                            </div>
+                        
+                                            <div class="button">
+                                                <button id="new-sign-in-btn">Sign In</button>
+                                            </div>
+                        
+                                            <div class="sign-up">
+                                                <p>Not a member?</p>
+                                                <span id="sign-up-now">Sign Up</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Sign Up Section -->
+                        
+                                    <div class="sign-up-container">
+                                        <div class="sign-up-con">
+                                                <div class="hamburger3">
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <div class="sign-up-title-img">
+                                                    <img src="../icons/sign-in.png" alt="">
+                                                    <div class="sign-up-title">
+                                                        <h1>Sign Up</h1>
+                                                    </div>
+                                                </div>
+                                                <div class="sign-up-content">
+                                                    <div class="error">
+                                                        <span id="yeah">Please input correctly in all the space provided below.</span>
+                                                    </div>
+                                                    <div class="error5">
+                                                        <span id="y">Email must contain '@gmail.com'.</span>
+                                                    </div>
+                                                    <div class="error2">
+                                                        <span id="y">Password must contain of 8 characters and above.</span>
+                                                    </div>
+                                                    <div class="error6">
+                                                        <span id="y">Please check the box below to continue signup.</span>
+                                                    </div>
+                        
+                                                    <div class="input-con">
+                                                        <input type="text" required id="sign-up-user-name">
+                                                        <label for="username" class="label-name"><span class="content-name">Username</span></label>
+                                                    </div>
+                        
+                                                    <div class="input-con">
+                                                        <input type="text" required id="sign-up-email">
+                                                        <label for="email" class="label-name"><span class="content-name">Email</span></label>
+                                                    </div>
+                                                    <div class="input-con">
+                                                        <input type="password" required id="sign-up-password">
+                                                        <label for="password" class="label-name"><span class="content-name">Password</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="r-updates">
+                                                    <input type="checkbox" id="myCheckbox">
+                                                    <p>I'd like to recieve updates on my email.</p>
+                                                </div>
+                        
+                                                <div class="button2">
+                                                <button id="new-sign-up-btn" type="submit">Sign Up</button>
+                                                </div>
+                        
+                                                <div class="terms-con-and-pr-po">
+                                                    <p>By signing up you acknowledge and accept out <span>Terms & Conditions</span> and <span>Privacy Policy</span></p>
+                                                </div>
+                        
+                                                <div class="already-member">
+                                                    <p>Already a member? <span id="close-sign-up">Sign In</span></p>
+                                                </div>
+                                        </div>
+                                    </div>
+                        
+                                    <!-- Forgot password Section -->
+                        
+                                    <div class="fpass-container">
+                                        <div class="fpass-con">
+                                            <div class="hamburger4">
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                            <div class="fpass-title-img">
+                                                <div class="fpass-title">
+                                                    <h1>Reset Password</h1>
+                                                </div>
+                                            </div>
+                                            <div class="fpass-content">
+                                                <div class="successful20">
+                                                    <span id="hello">Incorrect password.</span>
+                                                </div>
+                                                <div class="successful30">
+                                                    <span id="hello">Password must contain 8 characters and above.</span>
+                                                </div>
+                                                <div class="successful40">
+                                                    <span id="hello">Reset password successful.</span>
+                                                </div>
+                                                <div class="input-con">
+                                                    <input type="password" required id="fpass-input-password">
+                                                    <label for="password" class="label-name"><span class="content-name">New Password</span></label>
+                                                </div>
+                                                <div class="input-con">
+                                                    <input type="password" required id="fpass-new-password">
+                                                    <label for="password" class="label-name"><span class="content-name">Confirm Password</span></label>
+                                                </div>
+                                                <div class="button2">
+                                                    <button id="new-confirm-btn" type="submit">Confirm</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+            <div class="container">
+                <div class="main-course-container">
+                    <div class="main-course-con">
+                        <div class="course-title-con">
+                            <img src="../icons/educ2.png" alt="">
+                            <div class="course-title">
+                                <h1>What is Sexual Transmitted Diseases(STDs) </h1>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                                <div class="p1-1">
+                                    <p>Sexually transmitted diseases (STDs) are infections that are passed from one person to another through sexual contact. The causes of STDs are bacteria, parasites, and viruses. There are more than 20 types of STDs, including</p>
+                                    <ul>
+                                        <li>Chlamydia</li>
+                                        <li>Genital herpes</li>
+                                        <li>Gonorrhea</li>
+                                        <li>HIV/AIDS</li>
+                                        <li>Syphilis</li>
+                                    </ul>
+                                </div>
+                                <div class="p1-2">
+                                    <h3>What is chlamydia?</h3>
+                                    <p>
+                                        Chlamydia is a common sexually transmitted disease. It is caused by bacteria called Chlamydia trachomatis. It can infect both men and women. Women can get chlamydia in the cervix, rectum, or throat. Men can get chlamydia in the urethra (inside the penis), rectum, or throat.
+                                    </p>
+                                </div>
+                                <div class="p1-3">
+                                    <h3>How to prevent chlamydia? </h3>
+                                    <p>
+                                        The surest way to prevent chlamydia infection is to abstain from sexual activities. Short of that, you can:
+                                    </p>
+                                    <ol type="1">
+                                        <li>Use condoms. Use a male latex condom or a female polyurethane condom during each sexual contact. Condoms used properly during every sexual encounter reduce but don't eliminate the risk of infection.</li>
+                                        <li>Limit your number of sex partners. Having multiple sex partners puts you at a high risk of contracting chlamydia and other sexually transmitted infections.</li>
+                                        <li>Get regular screenings. If you're sexually active, particularly if you have multiple partners, talk with your doctor about how often you should be screened for chlamydia and other sexually transmitted infections.</li>
+                                        <li>Avoid douching. Douching decreases the number of good bacteria in the vagina, which can increase the risk of infection.</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="p2-1">
+                                    <h3>What is Genital Herpes?</h3>
+                                    <p>
+                                        Genital herpes is a common sexually transmitted infection caused by the herpes simplex virus (HSV). Sexual contact is the primary way that the virus spreads. After the initial infection, the virus lies dormant in your body and can reactivate several times a year.
+                                    </p>
+                                </div>
+                                <div class="p2-2">
+                                    <h3>How to prevent Genital Herpes?</h3>
+                                    <p>
+                                        The suggestions for preventing genital herpes are the same as those for preventing other sexually transmitted infections: Abstain from sexual activity or limit sexual contact to only one person who is infection-free. Short of that, you can:
+                                    </p>
+                                    <ol type="1">
+                                        <li>Use, or have your partner use, a latex condom during every sexual contact. </li>
+                                        <li>Avoid intercourse if either partner has an outbreak of herpes in the genital area or anywhere else.</li>
+                                    </ol>
+                                </div>
+                                <div class="p2-3">
+                                    <h3>What is Gonorrhea?</h3>
+                                    <p>
+                                        Gonorrhea is an infection caused by a sexually transmitted bacterium that infects both males and females. Gonorrhea most often affects the urethra, rectum or throat. In females, gonorrhea can also infect the cervix.
+                                    </p>
+                                </div>
+                                <div class="p3-1">
+                                    <p>
+                                        Gonorrhea is most commonly spread during vaginal, oral or anal sex. But babies of infected mothers can be infected during childbirth. In babies, gonorrhea most commonly affects the eyes.
+                                    </p>
+                                </div>
+                                <div class="p3-2">
+                                    <h3>How to prevent Gonorrhea?</h3>
+                                    <p>
+                                        To reduce your gonorrhea risk:
+                                    </p>
+                                    <ol type="1">
+                                        <li>Use a condom if you have sex. Abstaining from sex is the surest way to prevent gonorrhea. But if you choose to have sex, use a condom during any type of sexual contact, including anal sex, oral sex or vaginal sex.</li>
+                                        <li>Limit your number of sex partners. Being in a monogamous relationship in which neither partner has sex with anyone else can lower your risk.</li>
+                                        <li>Be sure you and your partner are tested for sexually transmitted infections. Before you have sex, get tested and share your results with each other.</li>
+                                        <li>Don't have sex with someone who appears to have a sexually transmitted infection. If your partner has signs or symptoms of a sexually transmitted infection, such as burning during urination or a genital rash or sore, don't have sex with that person.</li>
+                                        <li>Consider regular gonorrhea screening. Annual screening is recommended for sexually active women younger than 25 and for older women at increased risk of infection. This includes women who have a new sex partner, more than one sex partner, a sex partner with other partners, or a sex partner who has a sexually transmitted infection.</li>
+                                    </ol>
+                                </div>
+                                <div class="p4-1">
+                                    <h3>What is HIV/AIDs? </h3>
+                                    <p>
+                                        HIV stands for human immunodeficiency virus. It harms your immune system by destroying the white blood cells that fight infection. This puts you at risk for serious infections and certain cancers. AIDS stands for acquired immunodeficiency syndrome. It is the final stage of infection with HIV. Not everyone with HIV develops AIDS.
+                                    </p>
+                                </div>
+                                <div class="p4-2">
+                                    <p>
+                                        HIV most often spreads through unprotected sex with a person who has HIV. It may also spread by sharing drug needles or through contact with the blood of a person who has HIV. Women can give it to their babies during pregnancy or childbirth.
+                                    </p>
+                                </div>
+                                <div class="p4-3">
+                                    <h3>How to prevent HIV/AIDS? </h3>
+                                    <p>
+                                        There's no vaccine to prevent HIV infection and no cure for AIDS. But you can protect yourself and others from infection.
+                                    </p>
+                                </div>
+                                <div class="p5-1">
+                                    <p>
+                                        To help prevent the spread of HIV:
+                                    </p>
+                                    <ol type="1">
+                                        <li>Use treatment as prevention (TasP). If you're living with HIV, taking HIV medication can keep your partner from becoming infected with the virus. If you make sure your viral load stays undetectable — a blood test doesn't show any virus</li>
+                                    </ol>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="social-media-icons-footer">
+            <div class="footer-con">
+                <img src="../icons/twitter.png" alt="">
+                <img src="../icons/email.png" alt="">
+                <img src="../icons/facebook.png" alt="">
+                <img src="../icons/google.png" alt="">
+            </div>
+            <span id="f">&copy Electronic Ubiquitous Training <span id="b">|</span> All Rights Reserved 2020</span>
+        </div>
+    </footer>
+
+
+
+
+    <script src="../js/notmain.js"></script>  
+    <script src="../js/main.js"></script>
+</body>
+</html>

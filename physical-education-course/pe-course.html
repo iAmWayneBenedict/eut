@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical Education</title>
+    <link rel="stylesheet" href="pe-course.css">
+    <link rel="icon" href="../icons/logo2.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="web-logo">
+                <img src="../icons/our-logo.png" alt="">
+            </div>
+            <div class="navigation">
+                <ul id="myUl">
+                    <div class="sign-in-con" id="none">
+                        <button id="sign-in-btn" class="mobile-sign-in-btn">sign in</button>
+                    </div>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="drop-btn"><a href="#myCourses" class="courses-drop">Courses</a>
+                        <div class="drop-links">
+                            <a href="../html-course/html-course.html"><img src="../icons/html2.png" alt="">HTML</a>
+                            <a href="../cpp-course/cpp-course.html"><img src="../icons/cpp2.png" alt="">C++</a>
+                            <a href="../ethics-course/ethics-course.html"><img src="../icons/ethics2.png" alt="">Ethics</a>
+                            <a href="../history-course/history-course.html"><img src="../icons/history2.png" alt="">History</a>
+                            <a href="../education-course/educ-course.html"><img src="../icons/educ2.png" alt="">Education</a>
+                            <a href="pe-course.html"><img src="../icons/pe2.png" alt="">Physical Education</a>
+                        </div>
+                    </li>
+                    <li><a href="../index.html">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="sign-in-con">
+                    <button id="sign-in-btn" class="web-sign-in-btn">sign in</button>
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div id="blur"></div>
+            <div class="sign-up-bg">
+                <img src="../icons/signup.png" alt="">
+            </div>
+            <div class="sign-in-bg">
+                <img src="../icons/signin.png" alt="">
+            </div>
+            <!-- Sign In Section -->
+
+            <div class="sign-in-container">
+                <div class="sign-in-con">
+                    <div class="hamburger2">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="sign-in-title-img">
+                        <img src="../icons/sign-in.png" alt="">
+                        <div class="sign-in-title">
+                            <h1>Sign In</h1>
+                        </div>
+                    </div>
+                    <div class="sign-in-content">
+                        <div class="successful">
+                            <span id="hello">Sign up successful. Please sign in now.</span>
+                        </div>
+                        <div class="successful2">
+                            <span id="hello">Incorrect email or password.</span>
+                        </div>
+                        <div class="successful4">
+                            <span id="hello">Please input correctly in all the space provided below.</span>
+                        </div>
+                        <div class="input-con">
+                            <input type="text" id="sign-in-input-email" autocomplete="off" required>
+                            <label for="email" class="label-name"><span class="content-name">Email</span></label>
+                        </div>
+                        
+                        <div class="input-con">
+                            <input type="password" required id="sign-in-input-password">
+                            <label for="password" class="label-name"><span class="content-name">Password</span></label>
+                        </div>
+                    </div>
+
+                    <div class="f-pass">
+                        <span><input type="checkbox">Keep me sign in</span>
+                        <p id="now">Forgot Password</p>
+                    </div>
+
+                    <div class="button">
+                        <button id="new-sign-in-btn">Sign In</button>
+                    </div>
+
+                    <div class="sign-up">
+                        <p>Not a member?</p>
+                        <span id="sign-up-now">Sign Up</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sign Up Section -->
+
+            <div class="sign-up-container">
+                <div class="sign-up-con">
+                        <div class="hamburger3">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="sign-up-title-img">
+                            <img src="../icons/sign-in.png" alt="">
+                            <div class="sign-up-title">
+                                <h1>Sign Up</h1>
+                            </div>
+                        </div>
+                        <div class="sign-up-content">
+                            <div class="error">
+                                <span id="yeah">Please input correctly in all the space provided below.</span>
+                            </div>
+                            <div class="error5">
+                                <span id="y">Email must contain '@gmail.com'.</span>
+                            </div>
+                            <div class="error2">
+                                <span id="y">Password must contain of 8 characters and above.</span>
+                            </div>
+                            <div class="error6">
+                                <span id="y">Please check the box below to continue signup.</span>
+                            </div>
+
+                            <div class="input-con">
+                                <input type="text" required id="sign-up-user-name">
+                                <label for="username" class="label-name"><span class="content-name">Username</span></label>
+                            </div>
+
+                            <div class="input-con">
+                                <input type="text" required id="sign-up-email">
+                                <label for="email" class="label-name"><span class="content-name">Email</span></label>
+                            </div>
+                            <div class="input-con">
+                                <input type="password" required id="sign-up-password">
+                                <label for="password" class="label-name"><span class="content-name">Password</span></label>
+                            </div>
+                        </div>
+                        <div class="r-updates">
+                            <input type="checkbox" id="myCheckbox">
+                            <p>I'd like to recieve updates on my email.</p>
+                        </div>
+
+                        <div class="button2">
+                        <button id="new-sign-up-btn" type="submit">Sign Up</button>
+                        </div>
+
+                        <div class="terms-con-and-pr-po">
+                            <p>By signing up you acknowledge and accept out <span>Terms & Conditions</span> and <span>Privacy Policy</span></p>
+                        </div>
+
+                        <div class="already-member">
+                            <p>Already a member? <span id="close-sign-up">Sign In</span></p>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Forgot password Section -->
+
+            <div class="fpass-container">
+                <div class="fpass-con">
+                    <div class="hamburger4">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="fpass-title-img">
+                        <div class="fpass-title">
+                            <h1>Reset Password</h1>
+                        </div>
+                    </div>
+                    <div class="fpass-content">
+                        <div class="successful20">
+                            <span id="hello">Incorrect password.</span>
+                        </div>
+                        <div class="successful30">
+                            <span id="hello">Password must contain 8 characters and above.</span>
+                        </div>
+                        <div class="successful40">
+                            <span id="hello">Reset password successful.</span>
+                        </div>
+                        <div class="input-con">
+                            <input type="password" required id="fpass-input-password">
+                            <label for="password" class="label-name"><span class="content-name">New Password</span></label>
+                        </div>
+                        <div class="input-con">
+                            <input type="password" required id="fpass-new-password">
+                            <label for="password" class="label-name"><span class="content-name">Confirm Password</span></label>
+                        </div>
+                        <div class="button2">
+                            <button id="new-confirm-btn" type="submit">Confirm</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="main-course-container">
+                    <div class="main-course-con">
+                        <div class="course-title-con">
+                            <img src="../icons/pe2.png" alt="">
+                            <div class="course-title">
+                                <h1>INTRODUCTION TO PHILIPPINE FOLKDANCE</h1>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <img src="../icons/pe-bg.jpg" alt="">
+                                <div class="p1-1">
+                                    <b style="font-size: 20px;">FOLK DANCE</b>
+                                    <p>is a form of dance developed by a group of people that reflects the traditional life of the people of a certain country or region.</p>
+                                </div>
+                                <div class="p1-2">
+                                    <h3>Objectives of Philippine Folk Dance</h3>
+                                    <p>To commit to the ideals of cultural development as a vital factor in nation-building.</p>
+                                    <p>To enhance the cultural values demonstrated in various folk dances aesthetically, morally, and physically.</p>
+                                    <p>To actively participate in folk dancing for its intellectual, moral, and aesthetic values.</p>
+                                    <p>To disseminate Philippine traditional dances in its pure and authentic form.</p>
+                                    <p>To appreciate folk dances as a cultural legacy and to show to other nations the identity of the Filipinos as a people.</p>
+                                    <br><br><br>
+                                    <ol type="1">
+                                        <li>Arms in lateral position- both arms are at one side, either sideward right or left, This may be done at shoulder, chest or waist level.</li>
+                                        <li>Brush- weight on one foot, hit the floor with the ball or heel of the other foot (the free foot) after which that foot is lifted from the floor to any direction.</li>
+                                        <li>Clockwise- like the motion of the hands of the clock. R shoulder is toward the center of an imaginary circle.</li>
+                                        <li>Counterclockwise- the reverse direction of clockwise. L shoulder is toward the center of an imaginary circle.</li>
+                                        <li>Cut- to displace quickly one foot with the other, thus completely taking off the weight of the body from the displaced foot.</li>
+                                        <li>Do-si-do- the vis-à-vis (opposites) both advance forward, pass each other’s right (or left) side, step across to the right (or left), move backward without turning around pass each other’s left (or right) side to proper places. This is of foreign origin and is used in many Philippine dances.</li>
+                                        <li>Free foot- the foot not bearing the weight of the body.</li>
+                                        <li>Free hand- the hand not placed anywhere or not doing anything.</li>
+                                        <li>Hands on waist- place hands at the waistline.</li>
+                                        <li>“Hayon-hayon”- to place one forearm in front and the other at the back of the waist. This is
+                                            a Visayan term.
+                                            </li>
+                                        <li>Hop- a spring from one foot landing on the same foot in place or in any direction. The other
+                                            foot may be raised in any direction (in front, in rear, sideward or across).
+                                            </li>
+                                        <li>Inside foot- the foot nearest one’s partner, when partner stand side by side.</li>
+                                        <li>Inside hand- the hand nearest one’s partner, when partner stand side by side.</li>
+                                        <li>“Jaleo”- partners turn once around clockwise (with R elbows almost touching) or
+                                            counterclockwise (with L elbows almost touching) using walking or any kind of dance step.
+                                            The hands near each other are on waists. This is a Tagalog term but of Spanish origin.
+                                            </li>
+                                        <li>Jump- spring on one foot or both feet, landing on both in any direction.</li>
+                                        <li>“Kumintang”- moving the hand from the wrist either in a clockwise or counterclockwise
+                                            direction. This is an Ilocano term.
+                                            </li>
+                                        <li>Outside foot- the foot away from the one’s partner, when partners stand side by side.</li>
+                                        <li>Outside hand- the hand away from one’s partner, when partners stand side by side.</li>
+                                        <li>Place- to put foot in a certain or desired position without putting weight on it. The sole of
+                                            the foot rest on the floor.
+                                            </li>
+                                        <li>Pivot- to turn with the ball, heel, or whole foot, on a fixed place or point.</li>
+                                        <li>Point- touch the floor lightly with the toes of one foot, weight of the body on the other foot. 22. “Salok”- to swing the arm downward-upward passing in front of the body as if scooping, the
+                                            trunk is bent forward following the movement of the arm doing the “salok”. This is a
+                                            Tagalog term.
+                                            </li>
+                                        <li>“Saludo” -partners bow to each other, to the audience, opposite dancers, or to the neighbors
+                                            with feet together. This term is of Spanish origin and is used in almost all Philippine dances. 24. “Sarok”- Cross the R (or L) foot in front of the L (or R), bend the body slightly forward and cross the hands (forearms) down in front with the R (or L) hand (forearm) over the L (or
+                                            R). This is a Visayan term.
+                                            </li>
+                                        <li>Slide- to glide foot smoothly along the floor. The movement may be finished with or without
+                                            transfer of weight.
+                                            </li>
+                                        <li>Stamp- to bring down the foot forcibly and noisily on the floor (like doing a heavy step)
+                                            with or without transfer of weight.
+                                            </li>
+                                        <li>Step- to advance or recede by raising or moving one foot to another resting place. </li>
+                                    </ol>
+                                </div>
+                                <div class="p1-3">
+                                    <h2>Fundament Arm Position</h2>
+                                    <div class="this-img">
+                                        <img src="../icons/1st.jpg" alt="">
+                                        <img src="../icons/2nd.jpg" alt="">
+                                        <img src="../icons/3rd.jpg" alt="">
+                                        <img src="../icons/4th.jpg" alt="">
+                                        <img src="../icons/5th.jpg" alt="">
+                                    </div>
+                                    <h2>Fundamental Feet Position </h2>
+                                    <div class="this-img">
+                                        <img src="../icons/6th.jpg" alt="">
+                                        <img src="../icons/7th.jpg" alt="">
+                                        <img src="../icons/8th.jpg" alt="">
+                                        <img src="../icons/9th.jpg" alt="">
+                                    </div>    
+                                    <h2>Fundamental Arm and Feet Position</h2>
+                                    <div class="this-img">
+                                        <img src="../icons/10th.jpg" alt="">
+                                        <img src="../icons/11th.jpg" alt="">
+                                        <img src="../icons/12th.jpg" alt="">
+                                    </div>
+                                </div>
+                                
+                                <div class="p2-1">
+                                    <h2>Fundamental</h2>
+                                    <h3>Performance Task:</h3>
+                                    <ol type="1">
+                                        <li>The teacher will demonstrate the dance in 2/4 and 3⁄4 time signature.</li>
+                                        <li>Give them time to practice with their partner to memorize the fundamental dance steps.</li>
+                                        <li>Let the students execute the dance steps in 2/4 and 3⁄4 time signature with music.</li>
+                                    </ol>
+                                    <p><b>Touch step</b> - Point R foot in front( ct. 1), step R close to L (ct. 2). This is commomnly done in front. =1M</p>
+                                    <p><b>Close step</b> - Step R foot (ct. 1), close L to R foot (ct. 2) = 1M This may be executed in any directions</p>
+                                    <p><b>Change Step</b> - Step R foot in front (ct. 1), step L close to R foot in rear (ct. and), step R foot quickly in front (ct. 2). This may be executed in any directions.</p>
+                                    <p><b>Step-Point</b> - Step R foot in front( ct. 1), point L foot in front (ct. 2) This step is executed in all directions.</p>
+                                    <p><b>Plain Polka</b> - Step L foot in front (ct.1), step R close to left foot in rear (ct. and), step L in front (ct.2), pause (ct. and).</p>
+                                    <p><b>Hop polka</b> - Hop on L foot and step R forward (ct.1), step L close to R in rear (ct. and), step R foot forward (ct. 2) and pause (ct. and). This may be executed in any directions.</p>
+                                    <p><b>Heel and toe polka</b> - Place L heel in fourth in front (ct.1), touch left toe in rear ( ct. 2), Take one plain polka step forward, starting with the L foot (ct. 1, and 2, and).</p>
+                                    <p><b>Slide polka</b> - Take two slide step forward and a plain polka: Slide L foot in front (ct. 1), close R to L foot in rear ( ct. and), slide R foot in front ( ct. 2), close L foot in rear ( ct. and). Take one plain polka forward starting with the L foot (cts. 1, and 2, and)</p><br>
+                                    <p>Some dance steps done in 2/4 time rhythm can also be done in 3⁄4 time. Review the step patterns of the following basic dance steps which are done in 3⁄4 time and identify which dance step can be done in 2/4and 3⁄4 time signature.</p><br>
+                                    <p><b>Touch step</b> - Point R foot in front( ct. 1 ), step R close to L ( ct. 2, 3 ). This is commomnly done in front. =1M</p>
+                                    <p><b>Step point</b> - Step R foot in front ( ct. 1), point L foot in front (cts. 2, 3 ) This step is executed in all directions.</p>
+                                    <p><b>Step swing</b> - Step R (cts. 1,2); swing L (ct. 3) or step R (ct. 1); swing L (cts. 2,3)Step hop step R (cts. 1,2); hop R (ct. 3) =1M</p>
+                                    <p><b>Close step</b> - 1) Step R foot ( cts. 1 ), close L to R foot (cts. 2, 3 ) = 1M, ` or
+                                        2) Step R foot ( cts. 1, 2 ), close L to R foot (ct. 3) = 1M This may be executed in any directions
+                                        </p>
+                                    <p><b>Native waltz</b> - Step L foot in front (ct.1), step R close to L in rear (ct.2), step L in front (ct.3)
+                                        This may be executed in all directions.
+                                        </p>
+                                    <p><b>Cross waltz</b> - Step R foot across the L foot in front and raise slightly the L foot across in rear (ct.1), step the L foot close to R in rear( ct.2), step R foot in front (ct. 3). Step on the ball of the rear foot on the second count.</p>    
+                                    <p><b>Waltz balance</b> - Step R in front (ct.1), close L foot to R in rear and raise heels (ct.2), lower heels with the weight of the body on the R foot (ct.3). The knees are slightly bent before raising the heels. This may be executed forward, backward, obliquely forward and backward, sideward right and left.</p>
+                                    <p><b>Three-step turn</b> - step R (ct. 1) turn and step L(ct. 2); turn and step R (ct. 3); close L to R (ct. 1); pause = 1M</p><br>
+                                    <p>The first step is usually done obliquely forward, cts. 1, 2, the cross-step is done sideward (ct. 3). The succeeding step is done obliquely backward (ct. 2) and the last two counts are done in front, in place. Arms open from the first position to the fourth position R or L arms high. Kumintang R (L) hand when pointing with L (R) foot on cts. 2, 3 of the second measure.</p><br>
+                                    <p>Sway balance with a point</p>
+                                    <p>step R, cross step L /step R, point L (1, 2 3 1 2, 3) = 2M</p>
+                                    <br>
+                                    <p>Sway balance with a brush</p>
+                                    <p>step R, cross step L /step R, brush L (1, 2 3 1 2, 3) = 2M</p>
+                                    <br>
+                                    <p>Sway balance with a close</p>
+                                    <p>step R, cross step L/step R, close L (1, 2 3 1 2, 3) = 2M</p>
+                                    <br>
+                                    <p>Sway balance with a hop</p>
+                                    <p>step R, cross step L /step R, raise L, hop (1, 2 3 1, 2, 3) = 2M</p>
+                                    <br>
+                                    <p>Sway balance with a raise</p>
+                                    <p>step R, cross step L /step R, raise L (1, 2 3 1 2, 3) = 2M</p>
+                                    <br>
+                                    <p>Sway balance with a waltz</p>
+                                    <p>step R,crossstepL/stepR,closeL,stepR (1,23123) = 2M</p>
+                                    <br><br>
+                                    <p>A successful and bountiful harvest is propitious occasion for celebration.</p>
+                                    <p>Kasaganaan which means prosperity is danced at these harvest festivals. It is a common practice in many regions in the Philippines to hold a harvest festival especially when the harvest is good it is an expression of thanksgiving. Dancing, singing, feasting with the traditional lechon, pig roasted whole and drinking tuba, lambanog, or basi are features of celebration. Good dancers are chosen to start the dance and the Kasayahan, Alay or any lively dances like Jotas, Pandanggos, Curachas may be performed in a short program on honor of the hosts. Usually the merrymakers are the workers and farmhands and the landlords and their families. Generous landlords oftentimes throw coins at the dancers and distribute money to the children. This generous gesture is called pasabog or sura in the Tagalog regions.</p>
+                                    <p>COSTUME Girl wears the traditional balintawak costume with tapis and panuelo (panyo) around neck. Boy wears barong tagalong and red, white or any colored trousers.</p><br><br>
+                                    <p>MUSIC is divided into two parts: A and B</p>
+                                    <p>COUNT one, two, three to a measure.</p><br>
+                                    <p>FORMATION Partners face each other at six feet apart. When facing audience,
+                                        Girl is right side of Boy. Any number of pairs may take part in this dance.
+                                        </p>
+                                    <h2>INTRODUCTION</h2>
+                                    <h3>Music Introduction</h3>
+                                    <h3>Partners face audience</h3>
+                                    <p>(a) Close steps sideward, R and L. girl holds skirt, Boy hands on waist ..... 2M</p>
+                                    <p>(b) Execute a three-step turn in place (cts. 1, 2, 3). Point L foot in front, Girl holds skirt,
+                                        Boy places hands on waist (cts. 1, 2, 3) .......... 2M
+                                        </p><br><br>
+                                    <b>-I-</b><br>
+                                    <h3>Music A</h3>
+                                    <h3>Partners face each other.</h3>
+                                    <ol type="a">
+                                        <li>Waltz sideward, R and L with the arm in lateral position. Move the arms sideward right
+                                            and left .......... 2M
+                                            </li>
+                                        <li>Execute a three-step turn in place (cts. 1, 2, 3). Point L foot in front, Girl holds skirt, Boy
+                                            places hands on waist (cts. 1, 2, 3) .......... 2M
+                                            </li>
+                                        <li>Repeat (a) and (b), starting with L foot. Reverse direction of arms in (a) ... 2M</li>
+                                        <li>Waltz R forward and L backward to the left alternately with the free hand of Girl holding
+                                            the skirt and the Boy’s .......... 2M
+                                            </li>
+                                        <li>Grapevine to partners place, passing front-to –front- step R foot sideward (cts. 1, 2), step L foot across R in rear (ct. 3), step R sideward (cts. 1, 2), step L across R in front (ct.3). Repeat once more the two measures. Finish in partner’s place. Girl holds skirt, Boy
+                                            places hands on waist
+                                            </li>
+                                    </ol>
+                                    <b>Partners face each other.</b><br>
+                                    <b>Repeat all (a-c). Finish in proper places</b><br><br><br>
+                                    <b>II</b><br>
+                                    <h3>Music B</h3>
+                                    <h3>Partners face each other.</h3>
+                                    <br><br>
+                                    <b>-II-</b><br>
+                                    <ol type="a">
+                                        <li>Sarok with R foot over L foot, bend trunk slightly forward and cross. Forearm in front with R forearm over L in front (cts. 1, 2, 3). Point R foot sideward. Trunk erect, arms in second position (cts. 1, 2, 3) .......... 2M</li>
+                                        <li>Waltz R sideward (cts. 1, 2, 3), brush L forward (cts. 1, 2, 3). Arms in fourth position, R arm high .......... 2M</li>
+                                        <li>Repeat (a) and (b), starting L foot, reverse position of arms .......... 4M</li>
+                                        <li>Repeat (a) and (b) 4M</li>
+                                        <li>Starting with L foot, take two waltz turns, moving sideward left (using two waltz steps for every turn). Forearm turn, L and R alternately every measure .... 4M</li>
+                                        <li>Repeat all (a-e) starting with L foot. Reverse direction and position of arms. Finish in proper places .......... 16M</li>
+                                    </ol>
+                                    <br><br>
+                                    <b>III</b>
+                                    <br>
+                                    <h3>Music A</h3>
+                                    <h3>Partners face each other.</h3>
+                                    <ol type="a">
+                                        <li>Step R foot obliquely right (ct.1), brush L forward (ct.2), hop on R in place (ct.3). Waltz
+                                            L forward to be in line at center by L shoulders (cts. 1, 2, 3). Swing both arms to fifth
+                                            position .......... 2M
+                                            </li>
+                                        <li>Starting with R foot, take two slide steps backward to proper places. R arm in fifth position, L hand of Girl holding skirt. That of Boy is placed on waist. Reverse position of
+                                            arms on the second slide step .......... 2M
+                                            </li>
+                                        <li>Waltz sideward, R and L alternately. Arms in lateral position, moving sideward right and
+                                            left alternately .......... 2M
+                                            </li>
+                                        <li>Execute a three-step turn right in place (cts. 1, 2, 3) close L to R foot (ct.1), pause (cts. 2,
+                                            3) Girl holds skirt, Boy places hands on waist .......... 2M
+                                            </li>
+                                        <li>Repeat all (a-d), starting L foot, reverse direction and position of arms .</li>
+                                        <li>Repeat all (a-e)</li>
+                                    </ol>
+                                    <br><br>
+                                    <b>IV</b>
+                                    <br>
+                                    <h3>Music B</h3>
+                                    <h3>R shoulder toward each other.</h3>
+                                    <ol type="a">
+                                        <li>Starting with R foot, take two cross steps sideward right going toward partners place,
+                                            passing front-to-front. Girl holds skirt, boy places hands on waist....... 2M
+                                            </li>
+                                        <li>Waltz turns to partners place (using two waltz steps), finish facing each other. Forearm
+                                            turn, R and L alternately .......... 2M
+                                            </li>
+                                        <li>Take four touch steps in front, R and L alternately. Hands as in (a) ......... 4M</li>
+                                        <li>Take two double sway balance steps, R and L alternately. Arms in fourth position, R arm
+                                            high on the first two measures and hands of Girl holding skirt, those of Boy are on waist on the two measure. Reverse position of arms when starting with L foot
+                                            </li>
+                                        <li>Repeat all (a-d). finish in proper places in (b)</li>
+                                    </ol>
+                                    <br><br>
+                                    <b>-SALUDO-</b>
+                                    <br>
+                                    <h3>Music Finale.</h3>
+                                    <h3>Partners face audience</h3>
+                                    <p>Pause (cts. 1, 2, 3). Execute a three step turn right in place (cts. 1, 2, 3). Feet together and pause (cts. 1, 2, 3). Bow to audience (cts. 1, 2, 3), trunk erect pause (cts. 1, 2, 3). Girl holds skirt, Boy places hands on waist .......... 5M</p>
+                                    <p>Pause (cts. 1, 2, 3). Execute a three step turn right in place (cts. 1, 2, 3). Feet together and pause (cts. 1, 2, 3). Bow to audience (cts. 1, 2, 3), trunk erect pause (cts. 1, 2, 3). Girl holds skirt, Boy places hands on waist .......... 5M</p>
+                                </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="social-media-icons-footer">
+            <div class="footer-con">
+                <img src="../icons/twitter.png" alt="">
+                <img src="../icons/email.png" alt="">
+                <img src="../icons/facebook.png" alt="">
+                <img src="../icons/google.png" alt="">
+            </div>
+            <span id="f">&copy Electronic Ubiquitous Training <span id="b">|</span> All Rights Reserved 2020</span>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="../js/notmain.js"></script>  
+    <script src="../js/main.js"></script>
+</body>
+</html>

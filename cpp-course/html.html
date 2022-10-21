@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="con"></div>
+        <div class="con2"></div>
+        <script>
+            let string = "3 2 1 4 5 3 4 6 7 10 22 11";
+            let con = document.querySelector('.con')
+            let con2 = document.querySelector('.con2')
+            let j = 0
+
+            let str = string.split(" ");
+
+            let numbers = str.sort((a , b) => b-a);
+            numbers.forEach(() => {
+                j++
+            });
+           con.innerHTML =  `Number of items: ${j} <br> Descending: ${numbers}`
+           let numbers2 = str.sort((a , b ) => a - b );
+           con2.innerHTML =  `Ascending: ${numbers2} <br> Original Arrangement: ${string}`
+        </script>
+    </main>
+</body>
+</html>

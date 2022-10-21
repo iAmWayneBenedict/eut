@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/logo2.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="web-logo">
+                <img src="icons/our-logo.png" alt="">
+            </div>
+            <div class="navigation">
+                <ul id="myUl">
+                    <div class="sign-in-con" id="none">
+                        <button id="sign-in-btn" class="mobile-sign-in-btn">sign in</button>
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#myCourses">Courses</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="sign-in-con">
+                    <button id="sign-in-btn" class="web-sign-in-btn">Sign in</button>
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="container">
+        <div class="container">
+            <div id="blur"></div>
+            <div class="sign-up-bg">
+                <img src="icons/signup.png" alt="">
+            </div>
+            <div class="sign-in-bg">
+                <img src="icons/signin.png" alt="">
+            </div>
+            <div class="sign-in-successful">
+                <p>Sign in successful. You can now access all the courses</p>
+            </div>
+
+            <!-- background -->
+            <div class="landing-page-background">
+                <div class="bg-container">
+                    <div class="img-container">
+                        <img src="icons/landing-page-bg.jpg" alt="">
+                    </div>
+                    <div class="page-background-container">
+                        <div class="content-background-container">
+                            <p>Take the <span>LEAD</span> - before classes even start.</p>
+                            <p><span>E</span>lectronic <span>U</span>biquitous <span>T</span>raining</p>
+                            <p>Shot IT. Save IT. Share IT.</p>
+                            <p><span>eUT</span> for future I.T. students</p>
+                            <a href="#myCourses" class="start-btn">Start Learning Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sign In Section -->
+
+            <div class="sign-in-container">
+                <div class="sign-in-con">
+                    <div class="hamburger2">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="sign-in-title-img">
+                        <img src="icons/sign-in.png" alt="">
+                        <div class="sign-in-title">
+                            <h1>Sign In</h1>
+                        </div>
+                    </div>
+                    <div class="sign-in-content">
+                        <div class="successful">
+                            <span id="hello">Sign up successful. Please sign in now.</span>
+                        </div>
+                        <div class="successful2">
+                            <span id="hello">Incorrect email or password.</span>
+                        </div>
+                        <div class="successful4">
+                            <span id="hello">Please input correctly in all the space provided below.</span>
+                        </div>
+                        <div class="input-con">
+                            <input type="text" id="sign-in-input-email" autocomplete="off" required>
+                            <label for="email" class="label-name"><span class="content-name">Email</span></label>
+                        </div>
+                        
+                        <div class="input-con">
+                            <input type="password" required id="sign-in-input-password">
+                            <label for="password" class="label-name"><span class="content-name">Password</span></label>
+                        </div>
+                    </div>
+
+                    <div class="f-pass">
+                        <span><input type="checkbox">Keep me sign in</span>
+                        <p id="now">Forgot Password</p>
+                    </div>
+
+                    <div class="button">
+                        <button id="new-sign-in-btn">Sign In</button>
+                    </div>
+
+                    <div class="sign-up">
+                        <p>Not a member?</p>
+                        <span id="sign-up-now">Sign Up</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sign Up Section -->
+
+            <div class="sign-up-container">
+                <div class="sign-up-con">
+                        <div class="hamburger3">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="sign-up-title-img">
+                            <img src="icons/sign-in.png" alt="">
+                            <div class="sign-up-title">
+                                <h1>Sign Up</h1>
+                            </div>
+                        </div>
+                        <div class="sign-up-content">
+                            <div class="error">
+                                <span id="yeah">Please input correctly in all the space provided below.</span>
+                            </div>
+                            <div class="error5">
+                                <span id="y">Email must contain '@gmail.com'.</span>
+                            </div>
+                            <div class="error2">
+                                <span id="y">Password must contain of 8 characters and above.</span>
+                            </div>
+                            <div class="error6">
+                                <span id="y">Please check the box below to continue signup.</span>
+                            </div>
+
+                            <div class="input-con">
+                                <input type="text" required id="sign-up-user-name">
+                                <label for="username" class="label-name"><span class="content-name">Username</span></label>
+                            </div>
+
+                            <div class="input-con">
+                                <input type="text" required id="sign-up-email">
+                                <label for="email" class="label-name"><span class="content-name">Email</span></label>
+                            </div>
+                            <div class="input-con">
+                                <input type="password" required id="sign-up-password">
+                                <label for="password" class="label-name"><span class="content-name">Password</span></label>
+                            </div>
+                        </div>
+                        <div class="r-updates">
+                            <input type="checkbox" id="myCheckbox">
+                            <p>I'd like to recieve updates on my email.</p>
+                        </div>
+
+                        <div class="button2">
+                        <button id="new-sign-up-btn" type="submit">Sign Up</button>
+                        </div>
+
+                        <div class="terms-con-and-pr-po">
+                            <p>By signing up you acknowledge and accept out <span>Terms & Conditions</span> and <span>Privacy Policy</span></p>
+                        </div>
+
+                        <div class="already-member">
+                            <p>Already a member? <span id="close-sign-up">Sign In</span></p>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Forgot password Section -->
+
+            <div class="fpass-container">
+                <div class="fpass-con">
+                    <div class="hamburger4">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="fpass-title-img">
+                        <div class="fpass-title">
+                            <h1>Reset Password</h1>
+                        </div>
+                    </div>
+                    <div class="fpass-content">
+                        <div class="successful20">
+                            <span id="hello">Incorrect password.</span>
+                        </div>
+                        <div class="successful30">
+                            <span id="hello">Password must contain 8 characters and above.</span>
+                        </div>
+                        <div class="successful40">
+                            <span id="hello">Reset password successful.</span>
+                        </div>
+                        <div class="input-con">
+                            <input type="password" required id="fpass-input-password">
+                            <label for="password" class="label-name"><span class="content-name">New Password</span></label>
+                        </div>
+                        <div class="input-con">
+                            <input type="password" required id="fpass-new-password">
+                            <label for="password" class="label-name"><span class="content-name">Confirm Password</span></label>
+                        </div>
+                        <div class="button2">
+                            <button id="new-confirm-btn" type="submit">Confirm</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Courses Section -->
+
+            <div class="courses-con" id="myCourses">
+                <div class="courses-title">
+                    <div class="courses-section-logo">
+                        <img src="icons/courses3.png" alt="">
+                    </div>
+                    <h1>Our Courses</h1>
+                </div>
+                <div id="courses">
+                    <div class="course-con">
+                        <div class="course-item">
+                            <div class="course-logo">
+                                <img src="icons/cpp2.png" alt="">
+                                <h3>C++</h3>
+                            </div>
+                            <div class="content-course">
+                                <p>Our C++ course covers basic concepts, data types, arrays, pointers, conditional statements, loops, functions, classes, oblects and etc.</p>
+                                <button id="course-btn" class="cpp-btn">Take this Course</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-con">
+                        <div class="course-item">
+                            <div class="course-logo">
+                                <img src="icons/html2.png" alt="">
+                                <h3>HTML</h3>
+                            </div>
+                            <div class="content-course">
+                                <p>Our HTML course provides an overview that covers a brief history of HTML,  basic tags, elements, attributes, formatting and etc.</p>
+                                <button id="course-btn" class="html-btn">Take this Course</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-con">
+                        <div class="course-item">
+                            <div class="course-logo">
+                                <img src="icons/ethics2.png" alt="">
+                                <h3>Ethics</h3>
+                            </div>
+                            <div class="content-course">
+                                <p>Our Ethics course covers Approaches to Ethics, Uses of Ethics, Ethics and the People, Where does ethics comes from and etc.</p>
+                                <button id="course-btn" class="ethics-btn">Take this Course</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-con">
+                        <div class="course-item">
+                            <div class="course-logo">
+                                <img src="icons/history2.png" alt="">
+                                <h3>History</h3>
+                            </div>
+                            <div class="content-course">
+                                <p>Our history course covers Pre-Spanish era, Spanish Colonialism, American Occupation, Japanese Occupation, The Republic of the Philippines and etc.</p>
+                                <button id="course-btn" class="history-btn">Take this Course</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-con">
+                        <div class="course-item">
+                            <div class="course-logo">
+                                <img src="icons/educ2.png" alt="">
+                                <h3>Education</h3>
+                            </div>
+                            <div class="content-course">
+                                <p>Our Sex Education course covers Sexually Transmited Disease (STD) that discusses about what these diseases can do, how it can affect us, and etc.</p>
+                                <button id="course-btn" class="sed-btn">Take this Course</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-con">
+                        <div class="course-item">
+                            <div class="course-logo">
+                                <img src="icons/pe2.png" alt="">
+                                <h3>Physical Education</h3>
+                            </div>
+                            <div class="content-course">
+                                <p>Our Physical Education course covers Objective of Folk Dance, Fundamental Hand and Foot Positions including brush, cut, do-si-do, "hayon hayon", and etc.</p>
+                                <button id="course-btn" class="pe-btn">Take this Course</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Us Section -->
+
+            <div class="about-container" id="about">
+                <div class="about-con">
+                    <div class="about-img-title-con">
+                        <img src="icons/about (2).png" alt="">
+                        <div class="about-title-con">
+                            <h1>About Us</h1>
+                        </div>
+                    </div>
+                    <div class="content-con">
+                        <p>We at Electronic Ubiquitous Training, welcome you in our Training Course. We provide courses taken in Information Technology, Computer Science, Information System and Library Information System including HyperText Markup Language (HTML), C++, Philippine History, Ethics, and etc. This will give you bunch of interesting ideas about Information and Communication Technology.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Our Team Section -->
+
+            <div class="our-team-container">
+                <div class="our-team-con">
+                    <div class="our-team-img-title-con">
+                        <img src="icons/our-team.png" alt="" id="our-team-img">
+                        <div class="our-team-title">
+                            <h1>Our Team</h1>
+                        </div>
+                    </div>
+                    <div class="members-container">
+                        <div class="members-con">
+                            <div class="member-container">
+                                <div class="member-con">
+                                    <div class="member-img">
+                                        <img src="member/asd.jpg" alt="" id="member-img">
+                                    </div>
+                                    <div class="member-name">
+                                        <h3>Jhon Doe</h3>
+                                    </div>
+                                    <div class="member-content" style="line-height: 50px;">
+                                        <p">Nino Jesus, Iriga City</p>
+                                        <a href="tel:09999999999">09999999999</a>
+                                        <a href="mailto:unknown@gmail.com">mailto:unknown@gmail.com</a>
+                                    </div>
+                                    <div class="social-media-icons">
+                                        <a href="#contact"><img src="icons/email.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/twitter.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/google.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/facebook.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-container">
+                                <div class="member-con">
+                                    <div class="member-img">
+                                        <img src="member/asd.jpg" alt="" id="member-img">
+                                    </div>
+                                    <div class="member-name">
+                                        <h3>Jhon Doe</h3>
+                                    </div>
+                                    <div class="member-content">
+                                        <p>Bachelor of Science in Information Technology</p>
+                                        <br>
+                                        <p>Nino Jesus, Iriga City</p>
+                                        <a href="">09999999999</a>
+                                        <a href="">unknown@gmail.com</a>
+                                    </div>
+                                    <div class="social-media-icons">
+                                        <a href="#contact"><img src="icons/email.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/twitter.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/google.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/facebook.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-container">
+                                <div class="member-con">
+                                    <div class="member-img">
+                                        <img src="member/asd.jpg" alt="" id="member-img">
+                                    </div>
+                                    <div class="member-name">
+                                        <h3>Jhon Doe</h3>
+                                    </div>
+                                    <div class="member-content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam perspiciatis esse magni molestias, officia vel incidunt eveniet aliquid explicabo est necessitatibus sapiente.</p>
+                                    </div>
+                                    <div class="social-media-icons">
+                                        <a href="#contact"><img src="icons/email.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/twitter.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/google.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/facebook.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-container">
+                                <div class="member-con">
+                                    <div class="member-img">
+                                        <img src="member/asd.jpg" alt="" id="member-img">
+                                    </div>
+                                    <div class="member-name">
+                                        <h3>Jhon Doe</h3>
+                                    </div>
+                                    <div class="member-content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam perspiciatis esse magni molestias, officia vel incidunt eveniet aliquid explicabo est necessitatibus sapiente.</p>
+                                    </div>
+                                    <div class="social-media-icons">
+                                        <a href="#contact"><img src="icons/email.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/twitter.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/google.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/facebook.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-container">
+                                <div class="member-con">
+                                    <div class="member-img">
+                                        <img src="member/asd.jpg" alt="" id="member-img">
+                                    </div>
+                                    <div class="member-name">
+                                        <h3>Jhon Doe</h3>
+                                    </div>
+                                    <div class="member-content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam perspiciatis esse magni molestias, officia vel incidunt eveniet aliquid explicabo est necessitatibus sapiente.</p>
+                                    </div>
+                                    <div class="social-media-icons">
+                                        <a href="#contact"><img src="icons/email.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/twitter.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/google.png" alt=""></a>
+                                        <a href="#contact"><img src="icons/facebook.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer and Contact Us Section -->
+
+    <footer>
+        <div class="contact-us-container">
+            <div class="contact-us-con">
+                <div class="contact-us-title">
+                    <img src="icons/contact.png" alt="" id="contact-us-img">
+                    <div class="contact-us-title1">
+                        <h1 id="contact">Contact Us</h1>
+                    </div>
+                </div>
+                <form action="" method="">
+                    <div class="contact-container">
+                        <div class="contact-details-container">
+                            <div class="contact-details-con div">
+                                <div class="contact-details">
+                                    <img src="icons/home.png" alt="" id="contact-details-icons">
+                                    <div class="contact-details-content">
+                                        <span class="unique">San Fernando, Camarines Sur</span>
+                                        <p>4343 Hinkle Deegan Lake Road</p>
+                                    </div>
+                                </div>
+                                <div class="contact-details">
+                                    <img src="icons/whatsapp.png" alt="" id="contact-details-icons">
+                                    <div class="contact-details-content">
+                                        <a href="tel:(958)9865562">00(958)9865562</a>
+                                        <p>Mon to Fri 9am to 6pm</p>
+                                    </div>
+                                </div>
+                                <div class="contact-details">
+                                    <img src="icons/email-contact.png" alt="" id="contact-details-icons">
+                                    <div class="contact-details-content">
+                                        <a href="mailto:support@eUT.com">support@eUT.com</a>
+                                        <p>Send us your query anytime</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-data div">
+                            <input type="text" class="input1" placeholder="Enter your name" required>
+                            <input type="email" class="input2" placeholder="Enter email address" required>
+                            <input type="text" class="input3" placeholder="Enter subject" required>
+                        </div>
+                        <div class="input-message div">
+                            <textarea name="message" id="" cols="30" rows="10" placeholder="Enter message" required></textarea><br>
+                            <div class="submit-btn">
+                                <button type="submit" id="submit-btn">Send message</button>
+                            </div>
+                        </div>
+                    </div>   
+                </form>                     
+            </div>
+        </div>
+        <div class="social-media-icons-footer">
+            <div class="footer-con">
+                <a href="www.twitter.com">
+                <img src="icons/twitter.png" alt="">
+                </a>
+                <a href="mailto:support@eUT.com">
+                <img src="icons/email.png" alt="">
+                </a>
+                <a href="www.facebook.com">
+                <img src="icons/facebook.png" alt="">
+                </a>
+                <a href="www.google.com">
+                <img src="icons/google.png" alt="">
+                </a>
+            </div>
+            <span id="f">&copy Electronic Ubiquitous Training <span id="b">|</span> All Rights Reserved 2020</span>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/parang.js"></script>
+</body>
+</html>
